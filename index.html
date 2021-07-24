@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- Remember to replace this with your title! -->
+	<title>Megan Ormonde</title>
+
+	<!-- LEVEL UP created icon w my initials and color scheme and changed the site favicon to that instead of the default gray globe -->
+	<link rel="icon" href="Icons/mont192x192.png">
+
+	<!-- Link for boostrap from: 
+    https://getbootstrap.com/docs/5.0/getting-started/introduction -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	 crossorigin="anonymous"></link>
+
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<!-- devicon icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<!-- Custom styles (these can extend bootstrap which is JUST CSS!) -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Navbar -->
+
+<!-- LEVEL UP so I made my own icon and that is clearly used here. I also added a hover highlight to the nav links so they are blue on hover. wanted to change their font color for regular and active highlight but i keep breaking it when i try so -->
+
+<body data-bs-spy='scroll' data-bs-target='#navbar-spy' data-bs-offset='100'>
+
+	<!-- Ok so i know it said to add a default container so there is spacing on larger screens but I personally really dont like how that looks and I truly want to use this site as an addition to my resume so I went with what I prefer 😬 -->
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id='navbar-spy'>
+		<div class="container-fluid">
+			<a class="navbar-brand " href="#">
+				<img src='Icons/mont192x192.png' class='navbar-img' >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link " href="#spy-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#spy-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#spy-skills">Skills</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#spy-portfolio">Portfolio</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="#spy-inspiration">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#spy-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- empty block -->
+  <div class='spacer'></div>
+
+
+  <!-- Hero Image -->
+  <!-- LEVEL UP did a carousel instead of a static image. -->
+  
+  <section class="heroImage " id='spy-home' name='spy-home' >
+
+   <!-- <div class="container-fluid"> -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div class='carousel slide carousel-fade' id='carousel-example' data-bs-ride='carousel'>
+
+          <div class='carousel-inner'>
+
+            <div class='carousel-item active'>
+              <img src='Images\earth1.jpg' alt='random image' class="d-block w-100 heroImg">
+              
+            </div>
+            <div class='carousel-item'>
+              <img src='Images\trees1.jpg' alt='random image' class="d-block w-100 heroImg">
+              
+            </div>
+            <div class='carousel-item'>
+              <img src='Images\metal1.jpg' alt='random image' class="d-block w-100 heroImg">  
+            </div>
+
+              <div class="carousel-caption heroCaption" >
+								
+                <img id="profileImg" src='Images\meBlueHair.jpg' alt='me' class="profileImg">
+                
+                <h1 id='myName' >Megan Ormonde</h1>
+                <p id='tagline' >If at first you don’t succeed, call it version 1.0</p>
+							</div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <hr>
+
+  <!-- Meet Me -->
+  <!-- LEVEL UP gif instead of image. Image is a link. Popup contains credit info. Paragraph text highlights on hover  -->
+  <section class="container col-12" id='spy-about' name='spy-about' >
+    <h2><!--<i class="bi-card-image"></i> --> Meet Me</h2>
+    <div class="row">
+      <section class='container col-12'> 
+        
+      </section>
+      <div class="container col-12 col-md-6 col-sm-4 my-auto">
+        <p class='paragraph'>Currently studying Software Engineering at Arizona State University with an expected graduation date of May 2022. I am passionate about programming and am currently aiming to work in web and/or game development. I am a lover of learning and while currently considering which programming language to move onto next, long term I am also considering working towards degrees in physics and astronomy to continue to grow my interest and knowledge in those areas. 
+        </p>
+
+      </div>
+      
+      <div class=" container col-12 col-md-6 col-sm-4 my-auto">
+        <p>
+          <a href='https://livingstills.nl/' data-toggle="hover" title="Image credit: Living Stills (click to see their site)"><img src='Images\water.gif' alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></a>
+        </p>
+        <!-- <p><img src='Images\river1.jpg' alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></p> -->
+        
+      </div>
+    </div>
+  </section>
+
+
+  <hr>
+
+  <!-- Skills -->
+  <!-- PUT IN ?? YEARS EXPERIENCE? INFO ON THE SKILL? Self note: ayo check more sites for more icons to finish putting in the more minor skills. -->
+
+  <!-- LEVEL UP add on hover to highlight the text following the skill icon so it is even more clear which matches which -->
+  <section class="container" id='spy-skills' name='spy-skills' >
+    <h2>Skills</h2>
+    <div class="row">
+      <p >
+        <div class='col-lg-3 col-md-6 col-sm-12 skillIcons '>
+          
+          <i class="devicon-java-plain skillIconsHover"></i>
+          <p class="skillIconsHover">Java<br>Experienced</p>
+         
+        </div>
+        <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-npm-original-wordmark"></i>
+           <p class="skillIconsHover">NPM<br>Familiar</p>
+        </div>
+        <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+          <i class="devicon-javascript-plain"></i>
+           <p class="skillIconsHover">Javascript<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-cplusplus-line"></i>
+           <p class="skillIconsHover">C++<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-c-line"></i>
+           <p class="skillIconsHover">C<br>Familiar</p>
+         </div>  
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-html5-plain"></i>
+           <p class="skillIconsHover">HTML5<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-css3-plain"></i>
+           <p class="skillIconsHover">CSS3<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-matlab-plain"></i>
+           <p class="skillIconsHover">Matlab<br>Familiar</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-git-plain"></i>
+           <p class="skillIconsHover">Git<br>Experienced</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-gradle-plain"></i>
+           <p class="skillIconsHover">Gradle<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-github-original"></i>
+           <p class="skillIconsHover">Github<br>Experienced</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-bootstrap-plain"></i>
+           <p class="skillIconsHover">Bootstrap<br>Knowledgable</p>
+         </div>
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'> 
+           <i class="devicon-mysql-plain"></i>
+           <p class="skillIconsHover">MySQL<br>Knowledgable</p>
+         </div> 
+         <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
+           <i class="devicon-nodejs-plain"></i>
+           <p class="skillIconsHover">Node.js<br>Familiar</p>
+         </div>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- <hr> -->
+  <!-- <section class='container' id='spy-portfolio' name='spy-portfolio' >
+    <div class='container'>
+      <h2>Portfolio<h2>
+    </div>
+
+    <div class='col-lg-3 col-md-6 col-sm-12'>
+      <p>
+        Currently, all projects are either private or school related, which must remain private on github as well. During an interview, however, I would be willing to show source code and demonstrate these projects. 
+      </p>
+    </div>
+  </section> -->
+
+  
+
+  <hr >
+  <!-- Inspiration Carousel -->
+  <!-- carousel-fade breaks buttons? why does nothing slow down time between slides. look into more another time. not of major importantce-->
+
+  <!-- LEVEL UP ? maybe? changing the indicator colors and the nav arrow colors and adding tex=xt shadows to arrows -->
+
+<section  class='container inspirCarousel' id='spy-inspiration' name='spy-inspiration' >
+  <h2>Inspiration</h2>
+  <div class="row ">
+    <div class="col-12">
+     <div id="carouselExampleCaptions" class="carousel slide  inspirCarousel" data-bs-ride="carousel" >
+        <div class="carousel-indicators indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active nonactive" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" class='nonactive' data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" class='nonactive'  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" class='nonactive'  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" class='nonactive'  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner inspirationImage">
+    
+          <div class='carousel-item active'>
+            <!-- <div class='inspirationImage'>
+              <img src='Images\frozen1920x1280.jpg' alt='random image'class="d-block w-100 inspImg">
+            </div> -->
+
+            <img src='Images\frozen1920x1280.jpg' alt='random image' class="d-block w-100  ">
+
+              <div class="carousel-caption inspirationCap">
+                <p class="display-4 inspirCap ">"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."</p>
+                <p>Martin Golding</p>
+            </div>
+          </div>
+
+          <div class='carousel-item'>
+            <!-- <div class='inspirationImage'>
+              <img src='Images\japan1920x1280.jpg' alt='random image' class="d-block w-100 ">
+            </div> -->
+              
+            <img src='Images\japan1920x1280.jpg' alt='random image' class="d-block w-100  ">
+
+            <div class="carousel-caption inspirationCap">
+              <p class="display-4 inspirCap ">"In C++ it’s harder to shoot yourself in the foot, but when you do, you blow off your whole leg."</p>
+              <p>Bjarne Stroustrup</p>
+             </div>
+          </div>
+
+          <div class='carousel-item'>
+            <!-- <div class='inspirationImage'>
+              <img src='Images\mountain1920x1280.jpg' alt='random image' class="d-block w-100 ">
+            </div> -->
+                
+            <img src='Images\mountain1920x1280.jpg' alt='random image' class="d-block w-100  ">
+                
+
+            <div class="carousel-caption inspirationCap">
+                <p class="display-4 inspirCap ">"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
+                <p>Linus Torvalds</p>
+             </div>
+          </div>
+ 
+          <div class='carousel-item'>
+            <!-- <div class='inspirationImage'>
+               <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
+            </div> -->
+              
+            <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100  ">
+
+            <div class="carousel-caption inspirationCap">
+              <p class="display-4  inspirCap">"If debugging is the process of removing software bugs, then programming must be the process of putting them in."</p>
+              <p>Edsger Dijkstra</p>
+            </div>
+          </div>
+
+              
+          <div class='carousel-item '>
+            <!-- <div class='inspirationImage  my-auto'>
+              <img src='Images\hillshome1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
+            </div> -->
+              
+            <img src='Images\hillshome1920x1280.jpg' alt='random image' class="d-block w-100  ">
+
+               <div class="carousel-caption inspirationCap">
+                 <p class="display-4 inspirCap ">"The most disastrous thing that you can ever learn is your first programming language."</p>
+                 <p>Alan Kay</p>
+            </div>
+          </div>
+    
+  </div>
+  
+  <button class="carousel-control-prev indicators" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next indicators" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  
+</div>
+</div>
+    </div>
+</section>
+
+
+  <hr >
+
+  <!-- Contact me -->
+  <!-- uncomment phone number when no longer sharing site w classmates/before use for resume -->
+
+  <!-- LEVEL UP ? maybe? have a hover modal popup for email and discord -->
+  <section class="container" id='spy-contact' name='spy-contact' '>
+    <section class='container'>
+      <h2>Contact Me</h2>
+    </section>
+    <div class="row no-gutters d-fex justify-content-center  contactIcons">
+    
+        <div class=' col-lg-2 col-md-6 col-sm-12 contactIcons '>
+          <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i class="icon  bi-linkedin"></i></a></div>
+        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+           <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a></div>
+        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+           <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i class="icon bi-envelope-fill "></i></a></div>
+        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+           <a data-toggle="hover" title="Megan O#2951" ><i class="icon bi-discord "></i></a></div>
+        <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+           <a data-toggle="popover" data-trigger="focus" title="U01T410GMDK" data-content="U01T410GMDK"><i class="icon bi-slack"></i></a></div> -->
+        <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+          <a href="tel:4028267432" data-toggle="hover" title="402-826-7432"><i class="icon bi-telephone-fill "></i></a>
+        </div> -->
+
+           
+    </div>
+  </section>
+
+ <!-- Megan O#2951
+       U01T410GMDK-->
+
+  <br>
+  <hr >
+
+  <!-- Footer -->
+  <footer class="container footer">
+    <div class="row">
+      <div class="container col-12 ">
+       &copy; Megan Ormonde 2021
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+</html>

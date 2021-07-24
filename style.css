@@ -1,0 +1,316 @@
+
+html, body{
+  color: #F2F5F7;
+  background: #101119;
+  position: relative; 
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  font-size: clamp(1vw, 1.2vw, 1.4vw);
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0.1em;
+}
+.spacer {
+  height: .2vh;
+}
+
+p {
+  color: #F2F5F7;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: clamp(1.2vw, 1.4vw, 1.6vw);
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  letter-spacing: 0.1em;
+}
+
+/*Image in navbar*/
+.navbar-img { 
+  width: 2.5rem; 
+  height: 2.5rem; 
+  margin-left: 1.5em;   
+}
+
+/*Change paragraph color on hover*/
+.paragraph:hover{
+  color: rgba(72, 127, 173, .8); 
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3);
+}
+
+/*hr design. could use improvement*/
+hr {
+  /* border: .2em solid #487FAD; 
+  margin: .5em 0;
+  position: relative;
+  background: #487FAD; 
+  box-shadow: 0 20px 20px -20px #D1DEE6; */
+
+  border: none; 
+  
+ 	width: 90%;
+	height: 5rem;
+	margin-top: 2rem;
+	border-bottom: .2rem solid #487FAD;
+  margin: 1rem auto 10px; 
+  
+}
+
+/*h2 adjustments*/
+h2 {
+  color: #D1DEE6; 
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3);
+}
+
+/*hero carousel*/
+.heroImage {
+  width: 100%;
+  height: 40%;
+  margin: auto; 
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden; 
+  position: relative;
+  padding: 0; 
+}
+.heroImage:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(50, 94, 134, 0.4);
+}
+/*hero carousel caption */
+.carousel-caption.heroCaption {
+  z-index: 75;
+  top: 30%; 
+  font-size: clamp(.75vw, 1.2vw, 1.75vw); 
+  /* font-weight: bolder;  */
+  text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3); 
+}
+.carousel-caption.heroCaption #tagline{
+  z-index: 75;
+  top: 30%; 
+  font-size: clamp(1vw, 1.5vw, 2vw); 
+  color: #FBFBF3; 
+  text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3);  
+}
+
+/*Profile image settings*/
+#profileImg {
+  height: clamp(15vmin, 25vmin, 35vmin);
+  width: clamp(15vmin, 25vmin, 35vmin);
+  border-radius: 50%;
+  border: .8rem  double rgba(72, 127, 173, 0.65); 
+} 
+
+/* carousel images*/
+.carousel-item img {
+  height:60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*about me image*/
+#aboutImg {
+  width:clamp(23rem, 28rem, 32rem);
+  height: clamp(15rem, 19rem,20rem);
+  /* border-radius: 10%;  */
+}
+
+/*Skill Icons*/
+.skillIcons {
+  color: #487FAD; 
+  font-size: clamp(1.3vw, 2.3vw, 3.3vw); 
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  text-align: center; 
+  margin: auto; 
+}
+
+/*skill icons on hover larger and color change*/
+.skillIcons:hover > p{
+  color: rgb(72, 127, 173); 
+  font-size: clamp(1.3vw, 1.5vw, 1.8vw);
+}
+
+/*Set navbar links to right side*/
+.me-auto {
+  margin-right: 0 !important;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/*navbar shadow*/
+.navbar {
+  /* height: 3.75rem;  */
+  box-shadow: 0 .2em .5em  rgba(72, 127, 173, 0.5); 
+  z-index: 600; 
+  min-height: clamp(3rem, 3.5rem, 4.5rem); 
+  background-color: #101119 !important; 
+}
+
+/*Contact Icons*/
+.contactIcons {
+  font-size: clamp(1vw, 2vw, 3vw); 
+  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  text-align: center; 
+  margin: auto; 
+ 
+}
+.contactIcons:hover {
+  font-size: clamp(1.2vw, 2vw, 3vw); 
+}
+
+/*contact Icon Colors*/
+.icon {
+   color: #487FAD; 
+}
+.icon:hover{
+  color: #A9C6DA; 
+}
+
+
+/*Inspiration carousel*/
+.carousel-caption.inspirationCap{
+  z-index: 75;
+  top: 25%; 
+  font-size: clamp(2vw, 3vw, 4vw); 
+  text-shadow: .07vw .07vw rgb(0, 0, 0); 
+  /* font-weight: bolder;  */
+}
+.carousel-caption.inspirationCap p{
+  z-index: 75;
+  /* top: 25%;  */
+  font-size: clamp(1vw, 1.5vw, 2vw); 
+  text-shadow: .07vw .07vw rgb(0, 0, 0); 
+  /* font-weight: bold;  */
+  color: #F2F5F7;
+}
+.carousel-caption.inspirationCap p.inspirCap{
+  z-index: 75;
+  top: 25%; 
+  font-size: clamp(2vw, 3vw, 4vw); 
+  text-shadow: .07vw .07vw rgb(0, 0, 0); 
+  /* font-weight: bold;  */
+  /* color: rgb(196, 196, 196);  */
+  color: #F2F5F7; 
+ 
+}
+.inspirationImage {
+  padding: .5rem; 
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  overflow: hidden; 
+  position: relative;
+}
+.inspirationImage:after {
+  content: "";
+  z-index: 10;
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(13, 14, 35, .5);
+  margin: auto;
+}
+
+/*pull indicators to front so they work*/
+.indicators{
+   z-index: 375; 
+}
+
+/*change indicator colors*/
+.carousel-indicators .nonactive{
+    background-color: #487FAD;
+    border: .1em solid #A9C6DA; 
+    border-radius: 1rem; 
+}
+
+/*change carousel transition speed*/
+.carousel-inner .carousel-item {
+	transition-duration: .8s;
+}
+
+/*MESSY TO MESS W*/
+/*change navbar colors*/
+.navbar-customclass {
+  /* background-color: #396884; */
+  color: #F2F5F7 !important;
+  /* font-weight: bold !important;  */
+  text-shadow: .02vw .02vw rgba(169, 198, 218, 0.3) !important; 
+}
+.nav-link:hover {
+  color: #487FAD !important; 
+}
+/* .navbar-nav > .active > a {
+  color: aqua;  
+} */
+.bg-primary{
+  background-color: #101119 !important;
+}
+
+/*footer*/
+.footer{
+  display: flex; 
+  align-items: center; 
+  height: 1.2em; 
+  justify-content: center; 
+  padding-bottom: 1.2em;
+   
+}
+
+/*LEVEL UP 
+changed the color and thickness of the scrollbar to match my background and also added a hover component to darken the bar when hovering to make it more noticable and also rounded the edges*/
+
+::-webkit-scrollbar {
+    width: clamp(.5em, .65em, .8em);
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #101119; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #A9C6DA; 
+    border-radius: .8em;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #487FAD; 
+}
+
+/*change carousel arrows to match theme and add shadow*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 4rem;
+  width: 4rem;
+  /* outline: #101119; */
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 4rem;
+  color: #A9C6DA;
+  text-shadow: .4vw .4vw rgba(16,17,25, 1);
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 4rem;
+  color: #A9C6DA;
+  text-shadow: -.4vw .4vw rgba(16,17,25, 1);
+}
