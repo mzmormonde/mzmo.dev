@@ -324,3 +324,11 @@ changed the color and thickness of the scrollbar to match my background and also
 .links:hover{
   color: #487FAD;
 }
+
+
+#opposite{
+  background: #A9C6DA;
+}
+#opposite:hover{
+  background: #487FAD;
+}
