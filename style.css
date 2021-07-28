@@ -316,3 +316,11 @@ changed the color and thickness of the scrollbar to match my background and also
   color: #A9C6DA;
   text-shadow: -.4vw .4vw rgba(16,17,25, 1);
 }
+
+.links{
+  color: #A9C6DA;
+  letter-spacing: 0.1em;
+}
+.links:hover{
+  color: #487FAD;
+}
