@@ -16,7 +16,7 @@ buttons.forEach(function (button) {
         if (e.target.id === 'opposite') {
             // body.style.backgroundColor = e.target.id;
             console.log("is clicked");
-            count++;
+            
             if (count % 2 == 0) {
                 //document.body.style.backgroundColor = "white";
                 // document.body.style.color = "black"; 
@@ -40,6 +40,7 @@ buttons.forEach(function (button) {
                 // Append link element to HTML head
                 head.appendChild(link);
             }
+            count++;
 
         }
     })
