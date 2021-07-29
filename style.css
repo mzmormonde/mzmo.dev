@@ -8,6 +8,9 @@ html, body{
   text-align: center;
   font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 0.1em;
+
+  scrollbar-color:  #A9C6DA #101119; 
+  scrollbar-thumb-hover-color: red; 
 }
 .spacer {
   height: .2vh;
@@ -296,6 +299,7 @@ h2 {
 ::-webkit-scrollbar-thumb {
     background: #A9C6DA; 
     border-radius: .8em;
+   
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -342,4 +346,7 @@ h2 {
 #opposite:hover{
   background: #487FAD;
 }
+
+
+/* FOR FIREFOX */
 
