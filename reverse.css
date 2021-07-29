@@ -203,32 +203,41 @@ html, body{
   }
   
   
-  /*Inspiration carousel*/
-  .carousel-caption.inspirationCap{
+
+/*Inspiration carousel*/
+.carousel-caption.inspirationCap{
     z-index: 75;
-    top: 25%; 
-    font-size: clamp(2vw, 3vw, 4vw); 
-    text-shadow: .07vw .07vw rgb(228, 228, 228); 
-    /* font-weight: bolder;  */
+    top: 23%; 
+    font-size: clamp(1.3vw, 1.58vw, 2.8vw); 
+    text-shadow: .07vw .07vw rgb(0, 0, 0); 
+    font-weight: bold;
+    letter-spacing: 0.1em;
   }
   .carousel-caption.inspirationCap p{
     z-index: 75;
     /* top: 25%;  */
-    font-size: clamp(1vw, 1.5vw, 2vw); 
+    font-size: clamp(.65vw, 1vw, 1.5vw); 
     text-shadow: .07vw .07vw rgb(0, 0, 0); 
     /* font-weight: bold;  */
     color: #F2F5F7;
+    letter-spacing: 0.1em;
   }
   .carousel-caption.inspirationCap p.inspirCap{
     z-index: 75;
-    top: 25%; 
-    font-size: clamp(2vw, 3vw, 4vw); 
+    top: 23%; 
+    font-size: clamp(1.3vw, 1.58vw, 2.8vw); 
     text-shadow: .07vw .07vw rgb(0, 0, 0); 
     /* font-weight: bold;  */
     /* color: rgb(196, 196, 196);  */
     color: #F2F5F7; 
-   
+    font-weight: bold; 
+    letter-spacing: 0.1em;
   }
+  
+  .inspirCarousel{
+    margin: auto;
+  }
+  
   .inspirationImage {
     padding: .5rem; 
     width: 100%;
