@@ -351,11 +351,12 @@ html, body{
   }
   
   
+
   #opposite{
     background: #487FAD;
     width: clamp(2rem, 3rem, 4rem); 
-    height: clamp(1.5rem, 2rem, 2.5rem); 
-    display: flex; 
+    height: clamp(1.8rem, 2.2rem, 2.8rem); 
+    
     align-items: center; 
     
   }
