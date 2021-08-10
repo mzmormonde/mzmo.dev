@@ -39,20 +39,19 @@
 <!-- Navbar -->
 
 
-<body  data-bs-target='#navbar' data-bs-offset='100' class='body'>
+<body data-bs-target='#navbar' data-bs-offset='100' class='body'>
 
   <nav class="navbar  navbar-dark bg-dark sticky-top" id='navbar'>
     <div class="container-fluid">
       <a class="navbar-brand " href="#">
         <img src='Icons/mont192x192.png' class='navbar-img'>
       </a>
-        <div>
-         
-        </div>
-   
+      <div>
+
+      </div>
+
       <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
-        aria-controls="navbarSupportedContent23" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
         <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
       </button>
 
@@ -96,7 +95,7 @@
 
   <!-- Hero Image -->
 
-  <section class="heroImage " id='home' >
+  <section class="heroImage " id='home'>
 
     <!-- <div class="container-fluid"> -->
     <div class="row">
@@ -160,30 +159,31 @@
   <section class="container col-12" id='about'>
     <h2>
       <!--<i class="bi-card-image"></i> --> Meet Me
-    <div class="row">
-      <section class='container col-12'>
+      <div class="row">
+        <section class='container col-12'>
 
-      </section>
-      <div class="container col-12 col-md-6 col-sm-4 my-auto">
-        <p class='paragraph'>Currently studying Software Engineering at Arizona State University with an expected
-          graduation date of May 2022. I am passionate about programming and am currently aiming to work in web and/or
-          game development. I am a lover of learning and while currently considering which programming language to move
-          onto next, long term I plan to continue learning as much as I can, not just within Software Engineering, but
-          about anything and everything in life.
-        </p>
+        </section>
+        <div class="container col-12 col-md-6 col-sm-4 my-auto">
+          <p class='paragraph'>Currently studying Software Engineering at Arizona State University with an expected
+            graduation date of May 2022. I am passionate about programming and am currently aiming to work in web and/or
+            game development. I am a lover of learning and while currently considering which programming language to
+            move
+            onto next, long term I plan to continue learning as much as I can, not just within Software Engineering, but
+            about anything and everything in life.
+          </p>
 
+        </div>
+
+        <div class=" container col-12 col-md-6 col-sm-4 my-auto">
+          <p>
+            <a href='https://livingstills.nl/' data-toggle="hover"
+              title="Image credit: Living Stills (click to see their site)"><img src='Images\water.gif'
+                alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></a>
+          </p>
+          <!-- <p><img src='Images\river1.jpg' alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></p> -->
+
+        </div>
       </div>
-
-      <div class=" container col-12 col-md-6 col-sm-4 my-auto">
-        <p>
-          <a href='https://livingstills.nl/' data-toggle="hover"
-            title="Image credit: Living Stills (click to see their site)"><img src='Images\water.gif' alt='random image'
-              class="d-block w-100 img-fluid" id='aboutImg'></a>
-        </p>
-        <!-- <p><img src='Images\river1.jpg' alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></p> -->
-
-      </div>
-    </div>
   </section>
 
 
@@ -192,7 +192,7 @@
   <!-- Skills -->
   <!-- PUT IN ?? YEARS EXPERIENCE? INFO ON THE SKILL? Self note: ayo check more sites for more icons to finish putting in the more minor skills. -->
 
-  <section class="container" id='skills' >
+  <section class="container" id='skills'>
     <h2>Skills</h2>
     <div class="row">
       <p>
@@ -227,8 +227,8 @@
         <p class="skillIconsHover">CSS3<br>Knowledgable</p>
       </div>
       <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
-        <i class="devicon-matlab-plain"></i>
-        <p class="skillIconsHover">Matlab<br>Familiar</p>
+        <i class="devicon-jquery-plain"></i>
+        <p class="skillIconsHover">jQuery<br>Familiar</p>
       </div>
       <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
         <i class="devicon-git-plain"></i>
@@ -259,18 +259,6 @@
     </div>
   </section>
 
-  <!-- <hr> -->
-  <!-- <section class='container' id='portfolio'  >
-    <div class='container'>
-      <h2>Portfolio<h2>
-    </div>
-
-    <div class='col-lg-3 col-md-6 col-sm-12'>
-      <p>
-        Currently, all projects are either private or school related, which must remain private on github as well. During an interview, however, I would be willing to show source code and demonstrate these projects. 
-      </p>
-    </div>
-  </section> -->
 
   <hr>
 
@@ -278,14 +266,20 @@
     <h2>Projects</h2>
     <div class="row">
       <p>
-      <div class='col-lg-3 col-md-6 col-sm-12 skillIcons '>
-        <i class="devicon-java-plain skillIconsHover"></i>
-        <p class="skillIconsHover">Java<br>Experienced</p>
+      <div class="container projectImage">
+        <a id="matchGameLink" data-toggle="hover" title="Click to play">
+          <img src="Images/matchGame.png" "></img>
+          <p >Match Game</p>
+        </a>
+        
       </div>
-      <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
-        <i class="devicon-npm-original-wordmark"></i>
-        <p class="skillIconsHover">NPM<br>Familiar</p>
+      <div class="container projectImage">
+        <a id="higherLowerLink" data-toggle="hover" title="Click to play">
+          <img src="Images/HigherLower.png" "></img>
+          <p >Higher/Lower</p>
+        </a>
       </div>
+      
       </p>
 
     </div>
@@ -295,7 +289,7 @@
   <!-- Inspiration Carousel -->
   <!-- carousel-fade breaks buttons? why does nothing slow down time between slides. look into more another time. not of major importantce-->
 
-  <section class='container ' id='inspiration' >
+  <section class='container ' id='inspiration'>
     <h2>Inspiration</h2>
     <div class="row ">
       <div class="inspirCarousel col-8 ">
@@ -444,7 +438,7 @@
   <!-- Contact me -->
   <!-- uncomment phone number when no longer sharing site w classmates/before use for resume -->
 
-  <section class="container" id='contact' >
+  <section class="container" id='contact'>
     <section class=' container'>
       <h2>Contact Me</h2>
     </section>
@@ -480,7 +474,7 @@
   <br>
   <hr>
 
-  <section class="container" id='imgCredit' >
+  <section class="container" id='imgCredit'>
     <section class=' container'>
       <h2>Image Credit</h2>
     </section>
@@ -506,7 +500,7 @@
   <footer class="container footer">
     <div class="row">
       <div class="container col-12 ">
-        &copy; Megan Ormonde 2021
+        &copy; Megan Z. M. Ormonde 2021
       </div>
     </div>
   </footer>

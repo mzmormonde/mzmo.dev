@@ -1,0 +1,131 @@
+
+:root {
+    /* --card-width: clamp(8rem, 10rem, 12rem);
+    --card-height: clamp(12rem, 14rem, 16rem); */
+    --card-width: 10rem;
+    --card-height: 14rem;
+  }
+  
+  body {
+    margin: 0;
+    background: url(img/marble.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #926c15;
+    font-family: Handlee;
+    text-shadow: .12em .12em #aa956e;
+    min-height: 100vh;
+    
+  }
+  
+  h1 {
+    font-size: 6vw;
+    text-align: center;
+   
+  }
+  
+  #ui-container {
+    text-align: center;
+  }
+  
+  #ui-container h3 {
+    margin: 0;
+    display: inline-block;
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  #ui-container h3:first-child {
+    margin-right: 4em;
+  }
+  
+  #card-container {
+    font-size:0;
+    margin: 5rem auto;
+    width: calc((var(--card-width) + 2.4rem) * 4);
+  }
+  
+  .card {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: var(--card-width);
+    height: var(--card-height);
+    border: .2rem solid transparent;  
+    overflow: hidden;
+  }
+  
+  /* Style the two logo images themselves. */
+  .card-down,
+  .card-up {
+    /* Take images out of the flow. */
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+  
+    /* When facing away from the screen each image should be hidden. */
+    backface-visibility: hidden;
+    border-radius: .5rem;
+    transition-duration: .3s;
+    
+  }
+  
+  .card-down {
+    background-image: url(img/newCard.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card-up {
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .card-down {
+    transform: rotateY(180deg);
+    
+  }
+  
+  .flipped .card-up {
+    transform: rotateY(0deg);
+  }
+  
+  .image-1 .card-up {
+    background-image: url(img/desert.jpeg), linear-gradient(#72dbf4, #72dbf4);
+   
+  }
+  
+  .image-2 .card-up {
+    background-image: url(img/ocean.jpeg), linear-gradient(#72dbf4, #72dbf4);
+   
+  }
+  
+  .image-3 .card-up {
+    background-image: url(img/river.jpeg), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-4 .card-up {
+    background-image: url(img/rocks.jpeg), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-5 .card-up {
+    background-image: url(img/wisteria.jpeg), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-6 .card-up {
+    background-image: url(img/yellowFlowers.jpeg), linear-gradient(#72dbf4, #72dbf4);
+  }
+
+  .btn{
+      background-color: #0d234b;
+      color: rgb(175, 127, 72); 
+      border-radius: .3rem;
+      font-size: 1.6vw;
+      margin: 1em; 
+  }
+  #wrapper {
+    display: flex;
+    justify-content: center;
+  }
