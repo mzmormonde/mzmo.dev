@@ -12,10 +12,10 @@ let count = 0;
 
 buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
-        console.log(e.target);
+        //console.log(e.target);
         if (e.target.id === 'opposite') {
             // body.style.backgroundColor = e.target.id;
-            console.log("is clicked");
+            //console.log("is clicked");
             
             if (count % 2 == 0) {
                 //document.body.style.backgroundColor = "white";
@@ -45,3 +45,29 @@ buttons.forEach(function (button) {
         }
     })
 })
+
+
+$(document).ready(function () {
+
+    $('.first-button').on('click', function () {
+  
+      $('.animated-icon1').toggleClass('open');
+    });
+    $('.second-button').on('click', function () {
+  
+      $('.animated-icon2').toggleClass('open');
+    });
+    $('.third-button').on('click',
+     function () {
+  
+      $('.animated-icon3').toggleClass('open');
+    });
+  });
+
+
+  $('.nav-link').click(function(){    
+    divId = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(divId).offset().top - 300
+    }, 200);
+  });
