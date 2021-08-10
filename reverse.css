@@ -8,13 +8,14 @@ html, body{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: 0.1em;
+    scrollbar-color:   #487FAD #F2F5F7; 
   }
   .spacer {
     height: .2vh;
   }
   
   p {
-    color: #101119;
+    color: rgb(16, 17, 25);
     font-family: 'Noto Sans KR', sans-serif;
     font-size: clamp(1.2vw, 1.4vw, 1.6vw);
     text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
@@ -27,7 +28,8 @@ html, body{
     height: 2.5rem; 
     margin-left: 1.5em;   
   }
-  
+
+ 
   /*Change paragraph color on hover*/
   .paragraph:hover{
     color: #487FAD; 
@@ -144,8 +146,9 @@ html, body{
   }
   .navbar-collapse {
     justify-content: flex-end;
+    
   }
-  
+
   /*navbar shadow*/
   .navbar {
     /* height: 3.75rem;  */
@@ -156,7 +159,6 @@ html, body{
     
   }
 
-
   /*MESSY TO MESS W*/
   /*change navbar colors*/
   .navbar-customclass {
@@ -166,8 +168,11 @@ html, body{
     text-shadow: .02vw .02vw rgba(169, 198, 218, 0.3) !important; 
   }
 
+
   nav .nav-link {
+    
       color: #101119 !important; 
+      
   }
 
   .nav-link:hover {
@@ -346,11 +351,117 @@ html, body{
   }
   
   
+
   #opposite{
     background: #487FAD;
+    width: clamp(2rem, 3rem, 4rem); 
+    height: clamp(1.8rem, 2.2rem, 2.8rem); 
+    
+    align-items: center; 
+    
+  }
+  #opposite:after{
+    content: "🌙"; 
+   
+  }
+  #opposite:hover{
+      background: #101119; 
+      
   }
 
-  #opposite:hover{
-      background: #fff; 
+
+  .navbar-toggler{
+    
+    border: transparent; 
   }
+  
+  animated-icon1, .animated-icon2, .animated-icon3 {
+    height: clamp(1rem, 2rem, 3rem); 
+    width: clamp(2rem, 2.3rem, 2.5rem); 
+    top: .12rem; 
+    bottom: .12rem; 
+    position: relative;
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    
+    }
+    
+    .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: .3rem;
+    width: 100%;
+   
+    
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    }
+  
+    
+    .animated-icon2 span {
+    background: #487FAD;
+    height: clamp(.1rem, .2rem, .3rem); 
+    width: clamp(2rem, 2.3rem, 2.5rem); 
+    
+    }
+  
+  
+  .animated-icon2 span:nth-child(1) {
+    top: .5rem;
+    }
+    
+    .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+    top: 1rem;
+    }
+    
+    .animated-icon2 span:nth-child(4) {
+    top: 1.5rem;
+    }
+    
+    .animated-icon2.open span:nth-child(1) {
+    top: 1.1rem;
+    width: 0%;
+    left: 50%;
+    }
+    
+    .animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    }
+    
+    .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    
+    }
+    
+    .animated-icon2.open span:nth-child(4) {
+    top: 1.1rem;
+    width: 0%;
+    left: 50%;
+    
+    }
+  
+  
   
