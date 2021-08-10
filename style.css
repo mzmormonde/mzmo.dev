@@ -161,7 +161,7 @@ h2 {
   /* height: 3.75rem;  */
   box-shadow: 0 .2em .5em  rgba(72, 127, 173, 0.5); 
   z-index: 600; 
-  min-height: clamp(3rem, 3.5rem, 4.5rem); 
+  min-height: clamp(2.5rem, 3rem, 4rem);
   background-color: #101119 !important; 
 }
 
@@ -351,13 +351,15 @@ h2 {
 
 #opposite{
   background: #487FAD;
-  width: clamp(3rem, 4rem, 5rem); 
-  height: clamp(2rem, 2.5rem, 3rem); 
-  border-color: none;
+  width: clamp(2rem, 3rem, 4rem); 
+  height: clamp(1.5rem, 2rem, 2.5rem); 
+  display: flex; 
+  align-items: center; 
+  
 }
 #opposite:after{
   content: "☀️"; 
-  
+  font-size: (1rem, 1.5rem, 2rem);
  /* margin: auto; */
 }
 #opposite:hover{
@@ -366,14 +368,17 @@ h2 {
 
 
 .navbar-toggler{
+ 
   border: transparent; 
 }
 
 animated-icon1, .animated-icon2, .animated-icon3 {
-  width: clamp(2rem, 3rem, 4rem);
-  height: clamp(1rem, 2rem, 3rem);
+  height: clamp(1rem, 2rem, 3rem); 
+  width: clamp(2rem, 2.3rem, 2.5rem); 
+  top: .12rem; 
+  bottom: .12rem; 
   position: relative;
-  margin: 0rem;
+  margin: auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -383,7 +388,7 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  border-color: transparent; 
+  
   }
   
   .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
@@ -391,7 +396,7 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   position: absolute;
   height: .3rem;
   width: 100%;
-  border-color: transparent; 
+ 
   
   opacity: 1;
   left: 0;
@@ -409,13 +414,13 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   .animated-icon2 span {
   background: #487FAD;
   height: clamp(.1rem, .2rem, .3rem); 
-  width: clamp(2.4rem, 2.6rem, 2.8rem); 
+  width: clamp(2rem, 2.3rem, 2.5rem); 
   
   }
 
 
 .animated-icon2 span:nth-child(1) {
-  top: 0rem;
+  top: .5rem;
   }
   
   .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
@@ -423,7 +428,7 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   }
   
   .animated-icon2 span:nth-child(4) {
-  top: 2rem;
+  top: 1.5rem;
   }
   
   .animated-icon2.open span:nth-child(1) {

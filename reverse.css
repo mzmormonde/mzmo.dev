@@ -146,8 +146,9 @@ html, body{
   }
   .navbar-collapse {
     justify-content: flex-end;
+    
   }
-  
+
   /*navbar shadow*/
   .navbar {
     /* height: 3.75rem;  */
@@ -167,8 +168,11 @@ html, body{
     text-shadow: .02vw .02vw rgba(169, 198, 218, 0.3) !important; 
   }
 
+
   nav .nav-link {
+    
       color: #101119 !important; 
+      
   }
 
   .nav-link:hover {
@@ -349,28 +353,34 @@ html, body{
   
   #opposite{
     background: #487FAD;
-    width: clamp(3rem, 4rem, 5rem); 
-    height: clamp(2rem, 2.5rem, 3rem); 
-    border-color: none;
+    width: clamp(2rem, 3rem, 4rem); 
+    height: clamp(1.5rem, 2rem, 2.5rem); 
+    display: flex; 
+    align-items: center; 
+    
   }
   #opposite:after{
     content: "🌙"; 
-    border-color: none;
+   
   }
   #opposite:hover{
       background: #101119; 
+      
   }
 
 
   .navbar-toggler{
+    
     border: transparent; 
   }
   
   animated-icon1, .animated-icon2, .animated-icon3 {
-    width: clamp(2rem, 3rem, 4rem);
-    height: clamp(1rem, 2rem, 3rem);
+    height: clamp(1rem, 2rem, 3rem); 
+    width: clamp(2rem, 2.3rem, 2.5rem); 
+    top: .12rem; 
+    bottom: .12rem; 
     position: relative;
-    margin: 0rem;
+    margin: auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -380,7 +390,7 @@ html, body{
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    border-color: transparent; 
+    
     }
     
     .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
@@ -388,7 +398,7 @@ html, body{
     position: absolute;
     height: .3rem;
     width: 100%;
-    border-color: transparent; 
+   
     
     opacity: 1;
     left: 0;
@@ -406,13 +416,13 @@ html, body{
     .animated-icon2 span {
     background: #487FAD;
     height: clamp(.1rem, .2rem, .3rem); 
-    width: clamp(2.4rem, 2.6rem, 2.8rem); 
+    width: clamp(2rem, 2.3rem, 2.5rem); 
     
     }
   
   
   .animated-icon2 span:nth-child(1) {
-    top: 0rem;
+    top: .5rem;
     }
     
     .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
@@ -420,7 +430,7 @@ html, body{
     }
     
     .animated-icon2 span:nth-child(4) {
-    top: 2rem;
+    top: 1.5rem;
     }
     
     .animated-icon2.open span:nth-child(1) {
