@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  html, body {
+     color: #081c15;
+     /* background-color: #d8f3dc;  */
+     
+     font-family: "Trebuchet MS, sans-serif";
+     letter-spacing: 0.1em;
+     height: 100%; 
+     font-size: clamp(1.5vw, 2.5vw, 3.5vw); 
+     text-align: center; 
+  }
+  
+  html {
+      display: table;
+      margin: auto;
+  }
+  
+  body {
+    
+  
+    background-image: linear-gradient(to bottom, rgba(108, 173, 235, 0.3), rgba(174, 110, 196, 0.3)),url("nums.jpeg"); 
+     background-repeat: repeat-x; 
+     background-size: cover; 
+     background-position: center; 
+     height: 100%; 
+     width: 100%; 
+     overflow: hidden;
+      display: table-cell;
+      vertical-align: middle;
+  }
+  
+  .loser{
+    height: clamp(4em, 5em, 6em); 
+    width: clamp(8em, 8em, 10em); 
+  }
+  
+  .winner {
+    height: clamp(5em, 6em, 7em); 
+    width: clamp(10em, 11em, 12em); 
+  }
+  
+  .btn{
+    font-size: clamp(1vw, 1.25vw, 1.5vw);
+    width: clamp(15vw, 15vw, 16vw); 
+    height: clamp(2vh, 3vh, 4.25vh); 
+  }
+  
+  input{
+    font-size: clamp(1vw, 1.25vw, 1.5vw);
+   width: clamp(15vw, 15vw, 16vw); 
+    height: clamp(2vh, 3vh, 4vh); 
+  }
+
+  .btn{
+    background-color: #c7b8f1;
+    color: rgb(56, 56, 56); 
+    border-radius: .3rem;
+    font-size: 1.6vw;
+    margin: 1em; 
+}
+  

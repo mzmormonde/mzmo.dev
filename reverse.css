@@ -137,7 +137,7 @@ html, body{
   .skillIcons:hover > p{
     color: rgb(72, 127, 173); 
     font-weight: bold;
-    font-size: clamp(1.3vw, 1.5vw, 1.8vw);
+    
   }
   
   /*Set navbar links to right side*/
@@ -177,6 +177,7 @@ html, body{
 
   .nav-link:hover {
     color: #487FAD !important; 
+    cursor: pointer;
   }
   /* .navbar-nav > .active > a {
     color: aqua;  
@@ -197,6 +198,7 @@ html, body{
   }
   .contactIcons:hover {
     font-size: clamp(1.2vw, 2vw, 3vw); 
+    cursor: pointer;
   }
   
   /*contact Icon Colors*/
@@ -205,6 +207,7 @@ html, body{
   }
   .icon:hover{
     color: #2f424e; 
+    cursor: pointer;
   }
   
   
@@ -348,6 +351,7 @@ html, body{
   }
   .links:hover{
     color: #101119;
+    cursor: pointer;
   }
   
   
@@ -366,7 +370,7 @@ html, body{
   }
   #opposite:hover{
       background: #101119; 
-      
+      cursor: pointer;
   }
 
 
@@ -464,4 +468,21 @@ html, body{
     }
   
   
+  
+    div.container.projectImage {
+      height: 15rem;
+      width: 15rem; 
+    }
+    div.container.projectImage:hover {
+      height: 15rem;
+      width: 15rem; 
+      cursor: pointer;
+    }
+  
+    div.container.projectImage img{
+      height: 15rem;
+      width: 15rem; 
+      overflow: hidden;
+      border-radius: .5rem;
+    }
   
