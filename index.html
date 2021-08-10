@@ -10,7 +10,6 @@
   <!-- Remember to replace this with your title! -->
   <title>Megan Ormonde</title>
 
-  <!-- LEVEL UP created icon w my initials and color scheme and changed the site favicon to that instead of the default gray globe -->
   <link rel="icon" href="Icons/mont192x192.png">
 
   <!-- Link for boostrap from: 
@@ -32,40 +31,52 @@
 
   <!-- Custom styles (these can extend bootstrap which is JUST CSS!) -->
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- include jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <!-- Navbar -->
 
-<!-- LEVEL UP so I made my own icon and that is clearly used here. I also added a hover highlight to the nav links so they are blue on hover. wanted to change their font color for regular and active highlight but i keep breaking it when i try so -->
 
-<body data-bs-spy='scroll' data-bs-target='#navbar-spy' data-bs-offset='100' class='body'>
+<body  data-bs-target='#navbar' data-bs-offset='100' class='body'>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id='navbar-spy'>
+  <nav class="navbar  navbar-dark bg-dark sticky-top" id='navbar'>
     <div class="container-fluid">
       <a class="navbar-brand " href="#">
         <img src='Icons/mont192x192.png' class='navbar-img'>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars">
-        <span class="navbar-toggler-icon"></span>
+      <div>
+        <div>
+          <button class='btn button backgroundButton' id='opposite'></button>
+        </div>
+      </div>
+
+
+      <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+        aria-controls="navbarSupportedContent23" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
       </button>
+
       <div class="collapse navbar-collapse" id="navbars">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
-            <a class="nav-link " href="#home">Home</a>
+            <a class="nav-link " href="#home" onclick="home()">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#about">About</a>
+            <a class="nav-link " href="#about" onclick="about()">Meet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills" onclick="skills()">Skills</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link " href="#inspiration">Inspiration</a>
+            <a class="nav-link " href="#inspiration" onclick="inspiration()">Inspiration</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link " href="#contact">Contact</a>
           </li>
@@ -84,9 +95,8 @@
 
 
   <!-- Hero Image -->
-  <!-- LEVEL UP did a carousel instead of a static image. -->
 
-  <section class="heroImage " id='home' name='home'>
+  <section class="heroImage " id='home' >
 
     <!-- <div class="container-fluid"> -->
     <div class="row">
@@ -147,11 +157,9 @@
   <hr>
 
   <!-- Meet Me -->
-  <!-- LEVEL UP gif instead of image. Image is a link. Popup contains credit info. Paragraph text highlights on hover  -->
-  <section class="container col-12" id='about' name='about'>
+  <section class="container col-12" id='about'>
     <h2>
       <!--<i class="bi-card-image"></i> --> Meet Me
-    </h2>
     <div class="row">
       <section class='container col-12'>
 
@@ -184,8 +192,7 @@
   <!-- Skills -->
   <!-- PUT IN ?? YEARS EXPERIENCE? INFO ON THE SKILL? Self note: ayo check more sites for more icons to finish putting in the more minor skills. -->
 
-  <!-- LEVEL UP add on hover to highlight the text following the skill icon so it is even more clear which matches which -->
-  <section class="container" id='skills' name='skills'>
+  <section class="container" id='skills' >
     <h2>Skills</h2>
     <div class="row">
       <p>
@@ -253,7 +260,7 @@
   </section>
 
   <!-- <hr> -->
-  <!-- <section class='container' id='portfolio' name='portfolio' >
+  <!-- <section class='container' id='portfolio'  >
     <div class='container'>
       <h2>Portfolio<h2>
     </div>
@@ -271,9 +278,7 @@
   <!-- Inspiration Carousel -->
   <!-- carousel-fade breaks buttons? why does nothing slow down time between slides. look into more another time. not of major importantce-->
 
-  <!-- LEVEL UP ? maybe? changing the indicator colors and the nav arrow colors and adding tex=xt shadows to arrows -->
-
-  <section class='container ' id='inspiration' name='inspiration'>
+  <section class='container ' id='inspiration' >
     <h2>Inspiration</h2>
     <div class="row ">
       <div class="inspirCarousel col-8 ">
@@ -299,7 +304,7 @@
               <img src='Images\frozen1920x1280.jpg' alt='random image'class="d-block w-100 inspImg">
             </div> -->
               <a href="https://unsplash.com/photos/pAEwRKQJcn8" data-toggle="hover" title="Image credit: click to view">
-                <img src='Blue1920x1280/cloth.jpg'  alt='random image' class="d-block w-100  ">
+                <img src='Blue1920x1280/cloth.jpg' alt='random image' class="d-block w-100  ">
 
                 <div class="carousel-caption inspirationCap">
                   <p class="display-4 inspirCap ">"The most dangerous phrase in the language is, "We've always done it
@@ -331,7 +336,7 @@
               <img src='Images\mountain1920x1280.jpg' alt='random image' class="d-block w-100 ">
             </div> -->
               <a href="https://unsplash.com/photos/REF_h62U9gA" data-toggle="hover" title="Image credit: click to view">
-                <img src='Blue1920x1280/lightMoon.jpg'  alt='random image' class="d-block w-100  ">
+                <img src='Blue1920x1280/lightMoon.jpg' alt='random image' class="d-block w-100  ">
 
 
                 <div class="carousel-caption inspirationCap">
@@ -349,7 +354,7 @@
                <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
             </div> -->
               <a href="https://unsplash.com/photos/A4sSXg8I_h4" data-toggle="hover" title="Image credit: click to view">
-                <img src='Blue1920x1280/water.jpg'  alt='random image' class="d-block w-100  ">
+                <img src='Blue1920x1280/water.jpg' alt='random image' class="d-block w-100  ">
 
                 <div class="carousel-caption inspirationCap">
                   <p class="display-4  inspirCap">“I would like to be remembered as someone who was not afraid to do
@@ -366,7 +371,7 @@
                <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
             </div> -->
               <a href="https://unsplash.com/photos/qzoSJlPxS9k" data-toggle="hover" title="Image credit: click to view">
-                <img src='Blue1920x1280/flowers.jpg'  alt='random image' class="d-block w-100  ">
+                <img src='Blue1920x1280/flowers.jpg' alt='random image' class="d-block w-100  ">
 
                 <div class="carousel-caption inspirationCap">
                   <p class="display-4  inspirCap">“Don’t be afraid to ask for what you want. It is easy to allow
@@ -384,7 +389,7 @@
               <img src='Images\hillshome1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
             </div> -->
               <a href='https://unsplash.com/photos/b7ibFp72VAg' data-toggle="hover" title="Image credit: click to view">
-                <img src='Blue1920x1280/splash.jpg'  alt='random image' class="d-block w-100  ">
+                <img src='Blue1920x1280/splash.jpg' alt='random image' class="d-block w-100  ">
 
                 <div class="carousel-caption inspirationCap">
                   <p class="display-4 inspirCap ">“A creative block is nature’s way of calling in a moment of
@@ -422,35 +427,34 @@
   <!-- Contact me -->
   <!-- uncomment phone number when no longer sharing site w classmates/before use for resume -->
 
-  <!-- LEVEL UP ? maybe? have a hover modal popup for email and discord -->
-  <section class="container" id='contact' name='contact' >
+  <section class="container" id='contact' >
     <section class=' container'>
-    <h2>Contact Me</h2>
-  </section>
-  <div class="row no-gutters d-fex justify-content-center  contactIcons">
+      <h2>Contact Me</h2>
+    </section>
+    <div class="row no-gutters d-fex justify-content-center  contactIcons">
 
-    <div class=' col-lg-2 col-md-6 col-sm-12 contactIcons '>
-      <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i
-          class="icon  bi-linkedin"></i></a>
-    </div>
-    <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-      <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a>
-    </div>
-    <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-      <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i
-          class="icon bi-envelope-fill "></i></a>
-    </div>
-    <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-      <a data-toggle="hover" title="Megan O#2951"><i class="icon bi-discord "></i></a>
-    </div>
-    <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+      <div class=' col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i
+            class="icon  bi-linkedin"></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i
+            class="icon bi-envelope-fill "></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a data-toggle="hover" title="Megan O#2951"><i class="icon bi-discord "></i></a>
+      </div>
+      <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
            <a data-toggle="popover" data-trigger="focus" title="U01T410GMDK" data-content="U01T410GMDK"><i class="icon bi-slack"></i></a></div> -->
-    <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-      <a href="tel:4028267432" data-toggle="hover" title="402-826-7432"><i class="icon bi-telephone-fill "></i></a>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="tel:4028267432" data-toggle="hover" title="402-826-7432"><i class="icon bi-telephone-fill "></i></a>
+      </div>
+
+
     </div>
-
-
-  </div>
   </section>
 
   <!-- Megan O#2951
@@ -459,7 +463,7 @@
   <br>
   <hr>
 
-  <section class="container" id='imgCredit' name='imgCredit' >
+  <section class="container" id='imgCredit' >
     <section class=' container'>
       <h2>Image Credit</h2>
     </section>
@@ -474,13 +478,13 @@
       <a href="https://unsplash.com/photos/A4sSXg8I_h4" target="_blank" class='links'>Water</a>
       <a href="https://unsplash.com/photos/qzoSJlPxS9k" target="_blank" class='links'>Flowers</a>
       <a href="https://unsplash.com/photos/b7ibFp72VAg" target="_blank" class='links'>Splash</a>
-      
+
     </div>
   </section>
 
   <hr>
-  <button class='btn button backgroundButton' id='opposite'>Click for reverse colors</button>
-  <hr>
+  <!-- <button class='btn button backgroundButton' id='opposite'>Click for reverse colors</button>-->
+  <!-- <hr> -->
   <!-- Footer -->
   <footer class="container footer">
     <div class="row">
@@ -494,6 +498,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
     crossorigin="anonymous"></script>
+
+  <!-- Custom js-->
   <script src='app.js'></script>
 </body>
 
