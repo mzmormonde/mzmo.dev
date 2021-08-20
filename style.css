@@ -12,9 +12,7 @@ html, body{
   scrollbar-color:  #A9C6DA #101119; 
   
 }
-.spacer {
-  height: .2vh;
-}
+
 
 p {
   color: #F2F5F7;
@@ -71,7 +69,7 @@ h2 {
 }
 
 /*hero carousel*/
-.heroImage {
+/* .heroImage {
   width: 100%;
   height: 40%;
   margin: auto; 
@@ -88,35 +86,68 @@ h2 {
   z-index: 10;
   display: block;
   position: absolute;
+  
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   background: rgba(50, 94, 134, 0.4);
+} */
+
+.heroImage{
+  height: 40em; 
+  background: linear-gradient(-45deg, #101119, #487FAD,  #224861, 
+  #3376ad,#101119,#415766); 
+  background-size: 400% 400%; 
+  animation: gradient 10s ease infinite; 
+  /* margin-top: 2em; */
+  /* position: relative; */
 }
+.spacer {
+  height: .2vh;
+}
+
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%; ;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+/*Profile image settings*/
+#profileImg {
+  height: clamp(15rem, 16rem, 17rem);
+  width: clamp(15rem, 16rem, 17rem);
+  border-radius: 50%;
+  border: .8rem  double rgba(72, 127, 173, 0.65); 
+
+} 
 /*hero carousel caption */
-.carousel-caption.heroCaption {
+.caption {
   z-index: 75;
-  top: 30%; 
-  font-size: clamp(.75vw, 1.2vw, 1.75vw); 
+  top: 10em; 
+  font-size: clamp(.75vw, 1vw, 1.75vw); 
   /* font-weight: bolder;  */
   text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3); 
+  display:inline;
+  flex-direction: column;
+  position: relative;
+  color: #FBFBF3;
 }
-.carousel-caption.heroCaption #tagline{
+
+/* .heroCaption #tagline{
   z-index: 75;
   top: 30%; 
   font-size: clamp(1vw, 1.5vw, 2vw); 
   color: #FBFBF3; 
   text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3);  
-}
+} */
 
-/*Profile image settings*/
-#profileImg {
-  height: clamp(15vmin, 25vmin, 35vmin);
-  width: clamp(15vmin, 25vmin, 35vmin);
-  border-radius: 50%;
-  border: .8rem  double rgba(72, 127, 173, 0.65); 
-} 
+
 
 /* carousel images*/
 .carousel-item img {
@@ -318,7 +349,6 @@ h2 {
 ::-webkit-scrollbar-thumb {
     background: #A9C6DA; 
     border-radius: .8em;
-   
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
