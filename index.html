@@ -96,12 +96,19 @@
   <!-- Hero Image -->
 
   <section class="heroImage " id='home'>
+    <div class="caption">
+
+      <img id="profileImg" src='Images\meBlueHair.jpg' alt='me' class="profileImg">
+
+      <h1 id='myName'>Megan Ormonde</h1>
+      <p id='tagline'>If at first you don’t succeed, call it version 1.0</p>
+    </div>
 
     <!-- <div class="container-fluid"> -->
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <!-- <div class="row ">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 
-        <div class='carousel slide carousel-fade' id='carousel-example' data-bs-ride='carousel'>
+        <div class='carousel slide carousel-fade ' id='carousel-example' data-bs-ride='carousel'>
 
           <div class='carousel-inner'>
 
@@ -126,9 +133,7 @@
                 <img src='Nature1920x1280/mountainRange.jpg' alt='random image' class="d-block w-100">
               </a>
 
-
             </div>
-
 
             <div class='carousel-item'>
               <a class='popupCredit' href='https://unsplash.com/photos/EcVGogpC1G4' class='popupCredit'
@@ -146,10 +151,10 @@
               <p id='tagline'>If at first you don’t succeed, call it version 1.0</p>
             </div>
           </div>
-          <!-- </div> -->
+          
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
 
@@ -176,11 +181,8 @@
 
         <div class=" container col-12 col-md-6 col-sm-4 my-auto">
           <p>
-            <a href='https://livingstills.nl/' data-toggle="hover"
-              title="Image credit: Living Stills (click to see their site)"><img src='Images\water.gif'
-                alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></a>
+            <img class="secondaryImg" src="Images/purple.jpg" alt="Me wearing sunglasses with purple hair"></
           </p>
-          <!-- <p><img src='Images\river1.jpg' alt='random image' class="d-block w-100 img-fluid" id='aboutImg'></p> -->
 
         </div>
       </div>
@@ -196,11 +198,33 @@
     <h2>Skills</h2>
     <div class="row">
       <p>
-      <div class='col-lg-3 col-md-6 col-sm-12 skillIcons '>
-
+        <div class="col-lg-12 col-md-6 col-sm-4 skillIcons">
+          <!-- <p>
+            Hard Skills <br>
+            •Java (Experienced) •NPM (Familiar) •Javascript (Knowledgable) 
+            •C++ (Knowledgable) •C (Familiar) •HTML5 (Knowledgable) •CSS3 (Knowledgable)
+            •JQuery (Familiar) •Git (Experienced) •Gradle (Knowledgable) •Github (Experienced)
+            •Bootstrap (Familiar) •MySQL (Knowledgable) •Node.js (Familiar)
+          </p> -->
+          <p>
+            Hard Skills <br>
+            <span class="bar">┃</span> Java <span class="bar">┃</span> NPM  <span class="bar">┃</span> Javascript  
+            <span class="bar">┃</span> C++  <span class="bar">┃</span> C  <span class="bar">┃</span> HTML5  <span class="bar">┃</span> CSS3 
+            <span class="bar">┃</span> Git  <span class="bar">┃</span> Gradle  <span class="bar">┃</span> Github 
+            <span class="bar">┃</span> Bootstrap  <span class="bar">┃</span> MySQL  <span class="bar">┃</span> Node.js 
+          </p>
+          
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-4 skillIcons">
+          <p>
+            Soft Skills <br>
+            <span class="bar">┃</span> Collaboration <span class="bar">┃</span> Adaptability <span class="bar">┃</span> Teamwork <span class="bar">┃</span> Empathy <span class="bar">┃</span> Creativity 
+            <span class="bar">┃</span> Flexibility <span class="bar">┃</span> Conflict Resolution <span class="bar">┃</span> Communication 
+          </p>
+        </div>
+      <!-- <div class='col-lg-3 col-md-6 col-sm-12 skillIcons '>
         <i class="devicon-java-plain skillIconsHover"></i>
         <p class="skillIconsHover">Java<br>Experienced</p>
-
       </div>
       <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
         <i class="devicon-npm-original-wordmark"></i>
@@ -253,7 +277,7 @@
       <div class='col-lg-3 col-md-6 col-sm-12 skillIcons'>
         <i class="devicon-nodejs-plain"></i>
         <p class="skillIconsHover">Node.js<br>Familiar</p>
-      </div>
+      </div> -->
       </p>
 
     </div>
@@ -288,7 +312,7 @@
   <hr>
   <!-- Inspiration Carousel -->
   <!-- carousel-fade breaks buttons? why does nothing slow down time between slides. look into more another time. not of major importantce-->
-
+  <!--
   <section class='container ' id='inspiration'>
     <h2>Inspiration</h2>
     <div class="row ">
@@ -311,9 +335,7 @@
           <div class="carousel-inner inspirationImage">
 
             <div class='carousel-item active'>
-              <!-- <div class='inspirationImage'>
-              <img src='Images\frozen1920x1280.jpg' alt='random image'class="d-block w-100 inspImg">
-            </div> -->
+              
               <a href="https://unsplash.com/photos/pAEwRKQJcn8" data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/cloth.jpg' alt='random image' class="d-block w-100  ">
 
@@ -321,15 +343,13 @@
                   <p class="display-4 inspirCap ">"The most dangerous phrase in the language is, "We've always done it
                     this way."</p>
                   <p>Grace Hopper</p>
-                  <!--American Computer Scientists and US Navy Rear Admiral-->
+                  American Computer Scientists and US Navy Rear Admiral
                 </div>
               </a>
             </div>
 
             <div class='carousel-item'>
-              <!-- <div class='inspirationImage'>
-              <img src='Images\japan1920x1280.jpg' alt='random image' class="d-block w-100 ">
-            </div> -->
+              
               <a href="https://unsplash.com/photos/kXVogATbFgA" data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/darkFlowers.jpg' alt='random image' class="d-block w-100  ">
 
@@ -337,15 +357,13 @@
                   <p class="display-4 inspirCap ">“Trust in yourself, believe that your voice matters, and know that
                     your words are good enough.”</p>
                   <p>Amber Gordon</p>
-                  <!-- Founder of Femsplain-->
+                  Founder of Femsplain
                 </div>
               </a>
             </div>
 
             <div class='carousel-item'>
-              <!-- <div class='inspirationImage'>
-              <img src='Images\mountain1920x1280.jpg' alt='random image' class="d-block w-100 ">
-            </div> -->
+              
               <a href="https://unsplash.com/photos/REF_h62U9gA" data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/lightMoon.jpg' alt='random image' class="d-block w-100  ">
 
@@ -355,15 +373,13 @@
                     different requires a level of drive and passion that is really hard to fake. When your heart is
                     behind what you are doing, so much is possible.”</p>
                   <p>Tracy Sun</p>
-                  <!-- Co founder of Poshmark-->
+                   Co founder of Poshmark
                 </div>
               </a>
             </div>
 
             <div class='carousel-item'>
-              <!-- <div class='inspirationImage'>
-               <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
-            </div> -->
+              
               <a href="https://unsplash.com/photos/A4sSXg8I_h4" data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/water.jpg' alt='random image' class="d-block w-100  ">
 
@@ -372,15 +388,13 @@
                     what she wanted to do, and as someone who took risks along the way in order to achieve her goals.”
                   </p>
                   <p>Sally Ride</p>
-                  <!-- First American Woman in Space -->
+                   First American Woman in Space 
                 </div>
               </a>
             </div>
 
             <div class='carousel-item'>
-              <!-- <div class='inspirationImage'>
-               <img src='Images\watermountains1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
-            </div> -->
+              
               <a href="https://unsplash.com/photos/qzoSJlPxS9k" data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/flowers.jpg' alt='random image' class="d-block w-100  ">
 
@@ -389,16 +403,14 @@
                     insecurities about age/experience level to prevent you from making a big demand, or asking for a
                     meeting with an influential person, or even admitting that you need help.”</p>
                   <p>Olivia Pavco-Giaccia</p>
-                  <!-- Founder of LabCandy -->
+                   Founder of LabCandy 
                 </div>
               </a>
             </div>
 
 
             <div class='carousel-item '>
-              <!-- <div class='inspirationImage  my-auto'>
-              <img src='Images\hillshome1920x1280.jpg' alt='random image' class="d-block w-100 inspImg">
-            </div> -->
+              
               <a href='https://unsplash.com/photos/b7ibFp72VAg' data-toggle="hover" title="Image credit: click to view">
                 <img src='Blue1920x1280/splash.jpg' alt='random image' class="d-block w-100  ">
 
@@ -408,8 +420,8 @@
                     steps.”</p>
                   <p>Susan Lin</p>
 
-                  <!--Designer and Illustrator-->
-                  <!--splash image https://unsplash.com/photos/b7ibFp72VAg -->
+                  Designer and Illustrator
+                  
                 </div>
               </a>
             </div>
@@ -431,9 +443,10 @@
       </div>
     </div>
   </section>
+   <hr>
+-->
 
-
-  <hr>
+ 
 
   <!-- Contact me -->
   <!-- uncomment phone number when no longer sharing site w classmates/before use for resume -->
@@ -474,6 +487,7 @@
   <br>
   <hr>
 
+  <!--
   <section class="container" id='imgCredit'>
     <section class=' container'>
       <h2>Image Credit</h2>
@@ -492,8 +506,9 @@
 
     </div>
   </section>
-
-  <hr>
+   <hr>
+-->
+ 
   <!-- <button class='btn button backgroundButton' id='opposite'>Click for reverse colors</button>-->
   <!-- <hr> -->
   <!-- Footer -->
