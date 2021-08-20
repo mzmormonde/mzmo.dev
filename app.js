@@ -11,37 +11,75 @@ var link = document.createElement('link');
 let count = 0;
 
 buttons.forEach(function (button) {
-    button.addEventListener('click', function (e) {
-        console.log(e.target);
-        if (e.target.id === 'opposite') {
-            // body.style.backgroundColor = e.target.id;
-            console.log("is clicked");
-            
-            if (count % 2 == 0) {
-                //document.body.style.backgroundColor = "white";
-                // document.body.style.color = "black"; 
-                // document.getElementById("p").style.color = "#0000";
-                // set the attributes for link element 
-                link.rel = 'stylesheet';
+  button.addEventListener('click', function (e) {
+    //console.log(e.target);
+    if (e.target.id === 'opposite') {
+      // body.style.backgroundColor = e.target.id;
+      //console.log("is clicked");
 
-                link.type = 'text/css';
+      if (count % 2 == 0) {
+        //document.body.style.backgroundColor = "white";
+        // document.body.style.color = "black"; 
+        // document.getElementById("p").style.color = "#0000";
+        // set the attributes for link element 
+        link.rel = 'stylesheet';
 
-                link.href = 'reverse.css';
+        link.type = 'text/css';
 
-                // Append link element to HTML head
-                head.appendChild(link);
-            } else if (count % 2 != 0) {
-                link.rel = 'stylesheet';
+        link.href = 'reverse.css';
 
-                link.type = 'text/css';
+        // Append link element to HTML head
+        head.appendChild(link);
+      } else if (count % 2 != 0) {
+        link.rel = 'stylesheet';
 
-                link.href = 'style.css';
+        link.type = 'text/css';
 
-                // Append link element to HTML head
-                head.appendChild(link);
-            }
-            count++;
+        link.href = 'style.css';
 
-        }
-    })
+        // Append link element to HTML head
+        head.appendChild(link);
+      }
+      count++;
+
+    }
+  })
 })
+
+
+$(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click',
+    function () {
+
+      $('.animated-icon3').toggleClass('open');
+    });
+});
+
+
+$('.nav-link').click(function () {
+  divId = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(divId).offset().top - 300
+  }, 200);
+});
+
+
+document.getElementById("matchGameLink").onclick = function () {
+  location.href = "MatchGame/index.html";
+};
+
+document.getElementById("higherLowerLink").onclick = function () {
+  location.href = "HigherLower/index.html";
+};
+
+
+
