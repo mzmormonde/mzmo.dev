@@ -155,8 +155,15 @@ html, body{
   /*skill icons on hover larger and color change*/
   .skillIcons:hover > p{
     color: rgb(72, 127, 173); 
-    font-weight: bold;
     
+    
+  }
+
+  .bar{
+    color: #487FAD; 
+  }
+  .skillIcons:hover  .bar{
+    color: #101119; 
   }
   
   /*Set navbar links to right side*/

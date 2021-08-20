@@ -166,17 +166,24 @@ h2 {
 
 /*Skill Icons*/
 .skillIcons {
-  color: #487FAD; 
+  
   font-size: clamp(1.3vw, 2.3vw, 3.3vw); 
   text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
   text-align: center; 
   margin: auto; 
 }
 
+
 /*skill icons on hover larger and color change*/
 .skillIcons:hover > p{
   color: rgb(72, 127, 173); 
-  
+}
+
+.bar{
+  color: #487FAD; 
+}
+.skillIcons:hover  .bar{
+  color: #f3f5f7; 
 }
 
 /*Set navbar links to right side*/
