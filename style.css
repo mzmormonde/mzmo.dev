@@ -397,7 +397,7 @@ h2 {
   cursor: pointer;
 }
 
-#opposite{
+#opposite, #opposite2{
   background: #487FAD;
   width: clamp(2rem, 3rem, 4rem); 
   height: clamp(1.8rem, 2.2rem, 2.8rem); 
@@ -405,12 +405,12 @@ h2 {
   align-items: center; 
   
 }
-#opposite:after{
+#opposite:after , #opposite2:after{
   content: "☀️"; 
   font-size: (1rem, 1.5rem, 2rem);
  /* margin: auto; */
 }
-#opposite:hover{
+#opposite:hover, #opposite2:hover{
   background: #A9C6DA;
   cursor: pointer;
 }
@@ -524,5 +524,10 @@ animated-icon1, .animated-icon2, .animated-icon3 {
     height: 15rem;
     width: 15rem; 
     overflow: hidden;
+    border-radius: .5rem;
+  }
+
+
+  .hackathonImage{
     border-radius: .5rem;
   }

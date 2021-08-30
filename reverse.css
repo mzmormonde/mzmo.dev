@@ -390,7 +390,7 @@ html, body{
   
   
 
-  #opposite{
+  #opposite, #opposite2{
     background: #487FAD;
     width: clamp(2rem, 3rem, 4rem); 
     height: clamp(1.8rem, 2.2rem, 2.8rem); 
@@ -398,11 +398,11 @@ html, body{
     align-items: center; 
     
   }
-  #opposite:after{
+  #opposite:after, #opposite2:after{
     content: "🌙"; 
    
   }
-  #opposite:hover{
+  #opposite:hover, #opposite2:hover{
       background: #101119; 
       cursor: pointer;
   }
@@ -508,7 +508,7 @@ html, body{
       width: 15rem; 
     }
     div.projectImage:hover {
-      height: 15rem;
+      height: 15rem; 
       width: 15rem; 
       cursor: pointer;
     }
@@ -520,3 +520,6 @@ html, body{
       border-radius: .5rem;
     }
   
+    .hackathonImage{
+      border-radius: .5rem;
+    }
