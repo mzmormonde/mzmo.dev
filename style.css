@@ -530,4 +530,6 @@ animated-icon1, .animated-icon2, .animated-icon3 {
 
   .hackathonImage{
     border-radius: .5rem;
+    width: 50rem; 
+    height: 20rem; 
   }

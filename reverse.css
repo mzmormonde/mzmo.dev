@@ -522,4 +522,6 @@ html, body{
   
     .hackathonImage{
       border-radius: .5rem;
+      width: 50em; 
+      height: 20em; 
     }
