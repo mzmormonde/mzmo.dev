@@ -13,6 +13,7 @@ let count = 0;
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
     //console.log(e.target);
+    
     if (e.target.id === 'opposite') {
       // body.style.backgroundColor = e.target.id;
       //console.log("is clicked");
@@ -36,6 +37,43 @@ buttons.forEach(function (button) {
         link.type = 'text/css';
 
         link.href = 'style.css';
+
+        // Append link element to HTML head
+        head.appendChild(link);
+      }
+      count++;
+
+    }
+  })
+})
+
+buttons.forEach(function (button) {
+  button.addEventListener('click', function (e) {
+    //console.log(e.target);
+    console.log("SECONDARY WORKING")
+    if (e.target.id === 'opposite2') {
+      // body.style.backgroundColor = e.target.id;
+      //console.log("is clicked");
+
+      if (count % 2 == 0) {
+        //document.body.style.backgroundColor = "white";
+        // document.body.style.color = "black"; 
+        // document.getElementById("p").style.color = "#0000";
+        // set the attributes for link element 
+        link.rel = 'stylesheet';
+
+        link.type = 'text/css';
+
+        link.href = '/reverse.css';
+
+        // Append link element to HTML head
+        head.appendChild(link);
+      } else if (count % 2 != 0) {
+        link.rel = 'stylesheet';
+
+        link.type = 'text/css';
+
+        link.href = '/style.css';
 
         // Append link element to HTML head
         head.appendChild(link);
@@ -80,6 +118,16 @@ document.getElementById("matchGameLink").onclick = function () {
 document.getElementById("higherLowerLink").onclick = function () {
   location.href = "HigherLower/index.html";
 };
+
+document.getElementById("aug2021Hackathon").onclick = function () {
+  location.href = "Aug21Hackathon/index.html";
+};
+
+// document.getElementById("aug2021Hackathon").onclick = function (){
+//   window.open("https://mzmormonde.github.io/Aug2021Hackathon/",
+//   '_blank'); 
+// }; 
+
 
 
 
