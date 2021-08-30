@@ -503,17 +503,17 @@ html, body{
   
   
   
-    div.container.projectImage {
+    div.projectImage {
       height: 15rem;
       width: 15rem; 
     }
-    div.container.projectImage:hover {
+    div.projectImage:hover {
       height: 15rem;
       width: 15rem; 
       cursor: pointer;
     }
   
-    div.container.projectImage img{
+    div.projectImage img{
       height: 15rem;
       width: 15rem; 
       overflow: hidden;

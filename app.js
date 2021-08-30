@@ -81,5 +81,11 @@ document.getElementById("higherLowerLink").onclick = function () {
   location.href = "HigherLower/index.html";
 };
 
+document.getElementById("aug2021Hackathon").onclick = function (){
+  window.open("https://mzmormonde.github.io/Aug2021Hackathon/",
+  '_blank'); 
+}; 
+
+
 
 
