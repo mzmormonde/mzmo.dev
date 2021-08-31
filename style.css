@@ -533,3 +533,7 @@ animated-icon1, .animated-icon2, .animated-icon3 {
     width: 50rem; 
     height: 20rem; 
   }
+
+  .note{
+    font-size: .9vw;
+  }

@@ -525,3 +525,7 @@ html, body{
       width: 50em; 
       height: 20em; 
     }
+
+    .note{
+      font-size: .9vw;
+    }
