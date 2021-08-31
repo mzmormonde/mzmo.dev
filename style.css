@@ -219,6 +219,7 @@ h2 {
   text-align: center; 
   margin: auto; 
  
+ 
 }
 .contactIcons:hover {
   font-size: clamp(1.2vw, 2vw, 3vw); 
