@@ -242,8 +242,8 @@ html, body{
 
   #opposite, #opposite2{
     background: #487FAD;
-    width: clamp(2rem, 3vw, 4rem); 
-    height: clamp(1.8rem, 2vw, 2.8rem); 
+    width: clamp(2.8rem, 3vw, 4rem); 
+    height: clamp(2.5rem, 2vw, 2.5rem);
     
     align-items: center; 
     
