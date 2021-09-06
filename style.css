@@ -29,7 +29,6 @@ p {
 }
 
 
-
 /*Change paragraph color on hover*/
 .paragraph:hover{
   color: #487FAD; 
@@ -69,9 +68,9 @@ h2 {
 
 
 .heroImage{
-  height: 40em; 
-  background: linear-gradient(-45deg, #101119, #487FAD,  #224861, 
-  #3376ad,#101119,#415766); 
+  height: 55rem; 
+  background: linear-gradient(-45deg, #101119, #224861,  #487FAD, 
+  #3e6381  ); 
   background-size: 400% 400%; 
   animation: gradient 10s ease infinite; 
   /* margin-top: 2em; */
@@ -112,7 +111,7 @@ h2 {
 /*hero  caption */
 .caption {
   z-index: 75;
-  top: 10em; 
+  top: 15rem; 
   font-size: clamp(1rem, 1vw, 1.5rem); 
   /* font-weight: bolder;  */
   text-shadow: .1rem .1rem rgba(0, 0, 0, 0.3); 
@@ -247,14 +246,13 @@ h2 {
 #opposite, #opposite2{
   background: #487FAD;
   width: clamp(2rem, 3vw, 4rem); 
-  height: clamp(1.8rem, 2vw, 2.8rem); 
-  
+  height: clamp(2rem, 2vw, 2.5rem); 
   align-items: center; 
-  
+ 
 }
 #opposite:after , #opposite2:after{
   content: "☀️"; 
-  font-size: (1rem, 1.5rem, 2rem);
+ 
  /* margin: auto; */
 }
 #opposite:hover, #opposite2:hover{
@@ -360,6 +358,8 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   div.container.projectImage {
     height: 15rem;
     width: 15rem; 
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   div.container.projectImage:hover {
     height: 15rem;

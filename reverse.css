@@ -61,11 +61,11 @@ html, body{
   }
 
 .heroImage{
-  height: 40em; 
-  background: linear-gradient(-45deg, #F2F5F7, #487FAD,  #A9C6DA, 
-  #7a9cb8,#F2F5F7,#66a6d1); 
+  height: 55rem; 
+  background: linear-gradient(-45deg, #F2F5F7,  #9dbace, #789ab1, 
+  #6f99bb, #6a90af ); 
   background-size: 400% 400%; 
-  animation: gradient 10s ease infinite; 
+  animation: gradient 15s ease infinite; 
   /* margin-top: 2em; */
   /* position: relative; */
 }
@@ -100,7 +100,7 @@ html, body{
 /*hero  caption */
 .caption {
   z-index: 75;
-  top: 10em; 
+  top: 15rem; 
   font-size: clamp(1rem, 1vw, 1.5rem); 
   /* font-weight: bolder;  */
   text-shadow: .1rem .1rem rgba(0, 0, 0, 0.3); 
@@ -352,30 +352,32 @@ html, body{
     }
   
   
-  
-    div.projectImage {
+    div.container.projectImage {
       height: 15rem;
       width: 15rem; 
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
-    div.projectImage:hover {
-      height: 15rem; 
+    div.container.projectImage:hover {
+      height: 15rem;
       width: 15rem; 
       cursor: pointer;
     }
   
-    div.projectImage img{
+    div.container.projectImage img{
       height: 15rem;
       width: 15rem; 
       overflow: hidden;
       border-radius: .5rem;
     }
   
+  
     .hackathonImage{
       border-radius: .5rem;
-      width: 50em; 
-      height: 20em; 
+      width: 50rem; 
+      height: 20rem; 
     }
-
+  
     .note{
       font-size: .9vw;
     }
