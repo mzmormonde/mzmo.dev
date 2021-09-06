@@ -169,6 +169,7 @@ h2 {
   text-align: center; 
   margin: auto; 
  
+ 
 }
 .contactIcons:hover {
   font-size: clamp(1.2rem, 2vw, 3rem); 
@@ -378,4 +379,8 @@ animated-icon1, .animated-icon2, .animated-icon3 {
     border-radius: .5rem;
     width: 50rem; 
     height: 20rem; 
+  }
+
+  .note{
+    font-size: .9vw;
   }
