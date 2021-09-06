@@ -3,8 +3,7 @@ html, body{
   color: #F2F5F7;
   background: #101119;
   position: relative; 
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
-  font-size: clamp(1vw, 1.2vw, 1.4vw);
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
   text-align: center;
   font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 0.1em;
@@ -17,8 +16,8 @@ html, body{
 p {
   color: #F2F5F7;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: clamp(1.2vw, 1.4vw, 1.6vw);
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
   letter-spacing: 0.1em;
 }
 
@@ -30,18 +29,17 @@ p {
 }
 
 
-
 /*Change paragraph color on hover*/
 .paragraph:hover{
   color: #487FAD; 
   font-weight: bold;
-  text-shadow: .05vw .05vw rgba(9, 38, 59, 0.3);
+  text-shadow: .05rem .05rem rgba(9, 38, 59, 0.3);
 }
 
 /*Change paragraph color on hover*/
 .paragraph:hover{
   color: rgba(72, 127, 173, .8); 
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3);
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
 }
 
 /*hr design. could use improvement*/
@@ -65,46 +63,21 @@ hr {
 /*h2 adjustments*/
 h2 {
   color: #D1DEE6; 
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3);
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
 }
 
-/*hero carousel*/
-/* .heroImage {
-  width: 100%;
-  height: 40%;
-  margin: auto; 
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden; 
-  position: relative;
-  padding: 0; 
-}
-.heroImage:after {
-  content: " ";
-  z-index: 10;
-  display: block;
-  position: absolute;
-  
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(50, 94, 134, 0.4);
-} */
 
 .heroImage{
-  height: 40em; 
-  background: linear-gradient(-45deg, #101119, #487FAD,  #224861, 
-  #3376ad,#101119,#415766); 
+  height: 55rem; 
+  background: linear-gradient(-45deg, #101119, #224861,  #487FAD, 
+  #3e6381  ); 
   background-size: 400% 400%; 
   animation: gradient 10s ease infinite; 
   /* margin-top: 2em; */
   /* position: relative; */
 }
 .spacer {
-  height: .2vh;
+  height: .2rem;
 }
 
 @keyframes gradient{
@@ -120,63 +93,39 @@ h2 {
 }
 /*Profile image settings*/
 #profileImg {
-  height: clamp(15rem, 16rem, 17rem);
-  width: clamp(15rem, 16rem, 17rem);
+  height: clamp(15rem, 15vw, 16rem);
+  width: clamp(15rem, 15vw, 16rem);
   border-radius: 50%;
   border: .8rem  double rgba(72, 127, 173, 0.65); 
 
 }
 
+/*about me image*/
 .secondaryImg{
-  height: clamp(20rem, 23rem, 25rem);
-  width: clamp(18rem, 19rem, 20rem);
+  height: clamp(22rem, 23vw, 25rem);
+  width: clamp(18.5rem, 19vw, 20rem);
   border-radius: .5rem;
 }
 
 
-/*hero carousel caption */
+/*hero  caption */
 .caption {
   z-index: 75;
-  top: 10em; 
-  font-size: clamp(.75vw, 1vw, 1.75vw); 
+  top: 15rem; 
+  font-size: clamp(1rem, 1vw, 1.5rem); 
   /* font-weight: bolder;  */
-  text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3); 
+  text-shadow: .1rem .1rem rgba(0, 0, 0, 0.3); 
   display:inline;
   flex-direction: column;
   position: relative;
   color: #FBFBF3;
 }
 
-/* .heroCaption #tagline{
-  z-index: 75;
-  top: 30%; 
-  font-size: clamp(1vw, 1.5vw, 2vw); 
-  color: #FBFBF3; 
-  text-shadow: .1vw .1vw rgba(0, 0, 0, 0.3);  
-} */
-
-
-
-/* carousel images*/
-.carousel-item img {
-  height:100%;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-/*about me image*/
-#aboutImg {
-  width:clamp(23rem, 28rem, 32rem);
-  height: clamp(15rem, 19rem,20rem);
-  /* border-radius: 10%;  */
-}
-
 /*Skill Icons*/
 .skillIcons {
   
-  font-size: clamp(1.3vw, 2.3vw, 3.3vw); 
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  font-size: clamp(1.3rem, 2.3vw, 3.3rem); 
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
   text-align: center; 
   margin: auto; 
 }
@@ -207,22 +156,22 @@ h2 {
   /* height: 3.75rem;  */
   box-shadow: 0 .2em .5em  rgba(72, 127, 173, 0.5); 
   z-index: 600; 
-  min-height: clamp(2.5rem, 3rem, 4rem);
+  min-height: clamp(2.5rem, 3vw, 4rem);
   background-color: #101119 !important; 
 }
 
 
 /*Contact Icons*/
 .contactIcons {
-  font-size: clamp(1vw, 2vw, 3vw); 
-  text-shadow: .05vw .05vw rgba(206, 216, 223, 0.3); 
+  font-size: clamp(1rem, 2vw, 3rem); 
+  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
   text-align: center; 
   margin: auto; 
  
  
 }
 .contactIcons:hover {
-  font-size: clamp(1.2vw, 2vw, 3vw); 
+  font-size: clamp(1.2rem, 2vw, 3rem); 
   cursor: pointer;
 }
 
@@ -235,92 +184,13 @@ h2 {
 }
 
 
-/*Inspiration carousel*/
-.carousel-caption.inspirationCap{
-  z-index: 75;
-  top: 23%; 
-  font-size: clamp(1.3vw, 1.58vw, 2.8vw); 
-  text-shadow: .07vw .07vw rgb(0, 0, 0); 
-  font-weight: bold;
-  letter-spacing: 0.1em;
-}
-.carousel-caption.inspirationCap p{
-  z-index: 75;
-  /* top: 25%;  */
-  font-size: clamp(.65vw, 1vw, 1.5vw); 
-  text-shadow: .07vw .07vw rgb(0, 0, 0); 
-  /* font-weight: bold;  */
-  color: #F2F5F7;
-  letter-spacing: 0.1em;
-}
-.carousel-caption.inspirationCap p.inspirCap{
-  z-index: 75;
-  top: 23%; 
-  font-size: clamp(1.3vw, 1.58vw, 2.8vw); 
-  text-shadow: .07vw .07vw rgb(0, 0, 0); 
-  /* font-weight: bold;  */
-  /* color: rgb(196, 196, 196);  */
-  color: #F2F5F7; 
-  font-weight: bold; 
-  letter-spacing: 0.1em;
-}
-
-.inspirCarousel{
-  margin: auto;
-}
-
-/** overlay */
-.inspirationImage {
-  padding: .5rem; 
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  overflow: hidden; 
-  position: relative;
-}
-.inspirationImage:after {
-  content: "";
-  z-index: 10;
-  display: inline-block;
-  position: absolute;
-  height: 100%;
-  width: 100%; 
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(166, 210, 255, 0.5);
-  margin: auto;
-  overflow: hidden; 
-}
-
-/*pull indicators to front so they work*/
-.indicators{
-   z-index: 375; 
-}
-
-/*change indicator colors*/
-.carousel-indicators .nonactive{
-    background-color: #487FAD;
-    border: .1em solid #A9C6DA; 
-    border-radius: 1rem; 
-}
-
-/*change carousel transition speed*/
-.carousel-inner .carousel-item {
-	transition-duration: .8s;
-}
-
 /*MESSY TO MESS W*/
 /*change navbar colors*/
 .navbar-customclass {
   /* background-color: #396884; */
   color: #F2F5F7 !important;
   /* font-weight: bold !important;  */
-  text-shadow: .02vw .02vw rgba(169, 198, 218, 0.3) !important; 
+  text-shadow: .02rem .02rem rgba(169, 198, 218, 0.3) !important; 
 }
 .nav-link:hover {
   color: #487FAD !important; 
@@ -348,7 +218,7 @@ h2 {
   round the edges*/
 
 ::-webkit-scrollbar {
-    width: clamp(.5em, .65em, .8em);
+    width: clamp(.5em, .65vw, .8em);
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -364,31 +234,6 @@ h2 {
     background: #487FAD; 
 }
 
-/*change carousel arrows to match theme and add shadow*/
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 4rem;
-  width: 4rem;
-  /* outline: #101119; */
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  
-  background-image: none;
-}
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 4rem;
-  color: #A9C6DA;
-  text-shadow: .4vw .4vw rgba(16,17,25, 1);
-}
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 4rem;
-  color: #A9C6DA;
-  text-shadow: -.4vw .4vw rgba(16,17,25, 1);
-}
-
 .links{
   color: #A9C6DA;
   letter-spacing: 0.1em;
@@ -400,15 +245,14 @@ h2 {
 
 #opposite, #opposite2{
   background: #487FAD;
-  width: clamp(2rem, 3rem, 4rem); 
-  height: clamp(1.8rem, 2.2rem, 2.8rem); 
-  
+  width: clamp(2rem, 3vw, 4rem); 
+  height: clamp(2rem, 2vw, 2.5rem); 
   align-items: center; 
-  
+ 
 }
 #opposite:after , #opposite2:after{
   content: "☀️"; 
-  font-size: (1rem, 1.5rem, 2rem);
+ 
  /* margin: auto; */
 }
 #opposite:hover, #opposite2:hover{
@@ -423,8 +267,8 @@ h2 {
 }
 
 animated-icon1, .animated-icon2, .animated-icon3 {
-  height: clamp(1rem, 2rem, 3rem); 
-  width: clamp(2rem, 2.3rem, 2.5rem); 
+  height: clamp(1rem, 2vw, 3rem); 
+  width: clamp(2rem, 2.3vw, 2.5rem); 
   top: .12rem; 
   bottom: .12rem; 
   position: relative;
@@ -463,8 +307,8 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   
   .animated-icon2 span {
   background: #487FAD;
-  height: clamp(.1rem, .2rem, .3rem); 
-  width: clamp(2rem, 2.3rem, 2.5rem); 
+  height: clamp(.1rem, .2vw, .3rem); 
+  width: clamp(2rem, 2.3vw, 2.5rem); 
   
   }
 
@@ -514,6 +358,8 @@ animated-icon1, .animated-icon2, .animated-icon3 {
   div.container.projectImage {
     height: 15rem;
     width: 15rem; 
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   div.container.projectImage:hover {
     height: 15rem;
