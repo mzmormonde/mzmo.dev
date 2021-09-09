@@ -74,7 +74,7 @@ h2 {
   background-size: 400% 400%; 
   animation: gradient 10s ease infinite; 
   /* margin-top: 2em; */
-  /* position: relative; */
+  
 }
 .spacer {
   height: .2rem;
@@ -82,7 +82,8 @@ h2 {
 
 @keyframes gradient{
   0%{
-    background-position: 0% 50%; ;
+    background-position: 0% 50%; 
+    
   }
   50%{
     background-position: 100% 50%;
@@ -90,6 +91,7 @@ h2 {
   100%{
     background-position: 0% 50%;
   }
+  
 }
 /*Profile image settings*/
 #profileImg {
@@ -97,7 +99,7 @@ h2 {
   width: clamp(15rem, 15vw, 16rem);
   border-radius: 50%;
   border: .8rem  double rgba(72, 127, 173, 0.65); 
-
+  
 }
 
 /*about me image*/
@@ -119,6 +121,7 @@ h2 {
   flex-direction: column;
   position: relative;
   color: #FBFBF3;
+  
 }
 
 /*Skill Icons*/
@@ -245,8 +248,8 @@ h2 {
 
 #opposite, #opposite2{
   background: #487FAD;
-  width: clamp(2rem, 3vw, 4rem); 
-  height: clamp(2rem, 2vw, 2.5rem); 
+  width: clamp(2.8rem, 3vw, 4rem); 
+  height: clamp(2.5rem, 2vw, 2.5rem); 
   align-items: center; 
  
 }
