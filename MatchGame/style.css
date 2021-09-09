@@ -1,37 +1,70 @@
 
 :root {
-    /* --card-width: clamp(8rem, 10rem, 12rem);
-    --card-height: clamp(12rem, 14rem, 16rem); */
-    --card-width: 10rem;
-    --card-height: 14rem;
+    --card-width: clamp(8rem, 10vw, 12rem);
+    --card-height: clamp(12rem, 14vw, 16rem);
+    /* --card-width: 10rem;
+    --card-height: 14rem; */
   }
   
-  body {
+  html, body {
     margin: 0;
     background: url(img/marble.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    /* height: 50vh; */
+    width:100%;
+    
     color: #926c15;
     font-family: Handlee;
-    text-shadow: .12em .12em #aa956e;
+    font-size: clamp(1.2rem, 1.25vw, 1.5rem);
+    /* text-shadow: .1em .1em #aa956e; */
     min-height: 100vh;
+
+    
+  scrollbar-color:  #aa8f51 #c9c9c9; 
     
   }
+  /*change the color and thickness of the scrollbar to match my background 
+  add a hover component to darken the bar when hovering to make it more noticable
+  round the edges*/
+
+::-webkit-scrollbar {
+  width: clamp(.5em, .65vw, .8em);
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c9c9c9; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aa8f51; 
+  border-radius: .8em;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a5853b; 
+}
+
   
   h1 {
-    font-size: 6vw;
+    font-size: clamp(4rem, 3vw, 5rem);
     text-align: center;
    
   }
+
+
   
   #ui-container {
     text-align: center;
+    
   }
   
   #ui-container h3 {
     margin: 0;
     display: inline-block;
-    font-size: 4vw;
+    font-size: clamp(1.2rem, 1.25vw, 1.5rem);
     text-align: center;
   }
   
@@ -56,8 +89,7 @@
   }
   
   /* Style the two logo images themselves. */
-  .card-down,
-  .card-up {
+  .card-down,.card-up {
     /* Take images out of the flow. */
     position: absolute;
   
@@ -122,7 +154,7 @@
       background-color: #0d234b;
       color: rgb(175, 127, 72); 
       border-radius: .3rem;
-      font-size: 1.6vw;
+      font-size: clamp(1.2rem, 1.25vw, 1.5rem);
       margin: 1em; 
   }
   #wrapper {

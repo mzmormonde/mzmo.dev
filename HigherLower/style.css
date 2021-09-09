@@ -13,7 +13,7 @@
      font-family: "Trebuchet MS, sans-serif";
      letter-spacing: 0.1em;
      height: 100%; 
-     font-size: clamp(1.5vw, 2.5vw, 3.5vw); 
+     font-size: clamp(1rem, 2vw, 1.2rem); 
      text-align: center; 
   }
   
@@ -37,32 +37,32 @@
   }
   
   .loser{
-    height: clamp(4em, 5em, 6em); 
-    width: clamp(8em, 8em, 10em); 
+    height: clamp(5rem, 5vw, 7rem); 
+    width: clamp(9rem, 8vw, 11rem); 
   }
   
   .winner {
-    height: clamp(5em, 6em, 7em); 
-    width: clamp(10em, 11em, 12em); 
+    height: clamp(7rem, 6vw, 9rem); 
+    width: clamp(12rem, 13vw, 15rem); 
   }
   
   .btn{
-    font-size: clamp(1vw, 1.25vw, 1.5vw);
-    width: clamp(15vw, 15vw, 16vw); 
-    height: clamp(2vh, 3vh, 4.25vh); 
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    width: clamp(8rem, 8vw, 10rem); 
+    height: clamp(1.5rem, 2vw, 3rem); 
   }
   
   input{
-    font-size: clamp(1vw, 1.25vw, 1.5vw);
-   width: clamp(15vw, 15vw, 16vw); 
-    height: clamp(2vh, 3vh, 4vh); 
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+   width: clamp(10rem, 12vw, 12rem); 
+    height: clamp(1.5rem, 3vw, 2rem); 
   }
 
   .btn{
     background-color: #c7b8f1;
     color: rgb(56, 56, 56); 
     border-radius: .3rem;
-    font-size: 1.6vw;
+    font-size: clamp(.8rem, 1.25vw, 1rem);
     margin: 1em; 
 }
   
