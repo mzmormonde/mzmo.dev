@@ -112,15 +112,15 @@ $('.nav-link').click(function () {
 
 
 document.getElementById("matchGameLink").onclick = function () {
-  location.href = "MatchGame/index.html";
+  location.href = "Pages/MatchGame/index.html";
 };
 
 document.getElementById("higherLowerLink").onclick = function () {
-  location.href = "HigherLower/index.html";
+  location.href = "Pages/HigherLower/index.html";
 };
 
 document.getElementById("aug2021Hackathon").onclick = function () {
-  location.href = "Aug21Hackathon/index.html";
+  location.href = "Pages/Aug21Hackathon/index.html";
 };
 
 // document.getElementById("aug2021Hackathon").onclick = function (){
