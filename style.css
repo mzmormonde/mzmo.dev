@@ -394,12 +394,21 @@ h2 {
   }
 
 
-  .hackathonImage{
-    border-radius: .5rem;
-    width: 50rem; 
-    height: 20rem; 
-  }
 
   .note{
-    font-size: .9vw;
+    font-size: clamp(.5rem, 5vw, 1rem);
   }
+  div.container.hackathonImage{
+    height: clamp(20rem, 30vw, 40rem);
+    width: clamp(40rem, 50vw, 60rem);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hackathonImage img{
+    height: clamp(17rem, 18vw, 22rem);
+    width: clamp(20rem, 25vw, 30rem);
+    overflow: hidden;
+    border-radius: .5rem;
+  }
+
