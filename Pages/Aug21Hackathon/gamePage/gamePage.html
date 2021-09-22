@@ -25,15 +25,45 @@
 
     <!-- Custom styles  -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- include jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<header>
-    <div>
-        <br><br>
-    </div>
-</header>
+<body data-bs-target='#navbar' data-bs-offset='100' class='body'>
 
-<body>
+
+    <nav class="navbar  navbar-dark bg-dark sticky-top " id='navbar'>
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src='Images/favicon-32x32.webp' class='navbar-img' alt="MO secondary personal website logo">
+            </a>
+
+            <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbars" aria-controls="navbar-collapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="animated-icon2"><span></span><span></span><span></span><span></span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbars">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <!-- <li class="nav-item">
+                <button class='btn button backgroundButton' id='opposite'></button>
+              </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="/index.html">Back to mzmo.dev </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                <a class="nav-link " href="#imgCredit">Image Credit</a>
+              </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
     <!--About the game-->
     <h2>About The Game</h2>
     <section>
@@ -80,7 +110,7 @@
     <h2>Meet The Dev</h2>
     <section>
         <div class="row">
-        
+
             <section class="devs container col-12 col-md-12 col-sm-4">
                 <div class=" profileContainer col-4  no-gutters">
                     <img class="profileImg" src="Images/megan.webp" alt="Megan Ormonde">
@@ -121,6 +151,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
+
+    <!-- Custom js-->
+    <script src='/app.js'></script>
 
 </body>
 
