@@ -1,4 +1,12 @@
 
+
+/**
+black: #101119
+white: #F2F5F7
+
+*/
+
+
 html, body{
     color: #101119;
     background: #F2F5F7;
@@ -7,7 +15,7 @@ html, body{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: 0.1em;
-    scrollbar-color:   #487FAD #F2F5F7; 
+    scrollbar-color:   #7a70b9 #F2F5F7; 
   }
   .spacer {
     height: .2rem;
@@ -31,41 +39,40 @@ html, body{
  
   /*Change paragraph color on hover*/
   .paragraph:hover{
-    color: #487FAD; 
-    font-weight: bold;
+    color: #7a70b9; 
+    /* font-weight: bold; */
     text-shadow: .05rem .05rem rgba(9, 38, 59, 0.3);
   }
   
   /*hr design. could use improvement*/
   hr {
-    /* border: .2em solid #487FAD; 
+    /* border: .2em solid #7a70b9; 
     margin: .5em 0;
     position: relative;
-    background: #487FAD; 
-    box-shadow: 0 20px 20px -20px #D1DEE6; */
+    background: #7a70b9; 
+    box-shadow: 0 20px 20px -20px #e2e0f5; */
   
     border: none; 
     
        width: 90%;
       height: 5rem;
       margin-top: 2rem;
-      border-bottom: .2rem solid rgb(72, 127, 173);
+      border-bottom: .2rem solid rgb(110, 103, 162);
     margin: 1rem auto 10px; 
     
   }
   
   /*h2 adjustments*/
   h2 {
-    color: #487FAD; 
+    color: #7a70b9; 
     text-shadow: .05rem .05rem rgba(0, 0, 0, 0.4);
   }
 
 .heroImage{
   height: 55rem; 
-  background: linear-gradient(-45deg, #F2F5F7,  #9dbace, #789ab1, 
-  #6f99bb, #6a90af ); 
+  background: linear-gradient(-45deg, #F2F5F7,  #cfcce7, #bfbbe0, #a097da, #7f77b3, #8f87c5 ); 
   background-size: 400% 400%; 
-  animation: gradient 15s ease infinite; 
+  animation: gradient 12s ease infinite; 
   /* margin-top: 2em; */
   /* position: relative; */
 }
@@ -86,13 +93,13 @@ html, body{
   height: clamp(15rem, 15vw, 16rem);
   width: clamp(15rem, 15vw, 16rem);
   border-radius: 50%;
-  border: .8rem  double rgba(72, 127, 173, 0.65); 
+  border: .8rem  double rgba(110, 103, 162, 0.65); 
 
 }
 
 .secondaryImg{
   height: clamp(22rem, 23vw, 25rem);
-  width: clamp(18.5rem, 19vw, 20rem);
+  width: clamp(18rem, 19vw, 19rem);
   border-radius: .5rem;
 }
  
@@ -112,7 +119,7 @@ html, body{
 
   /*Skill Icons*/
   .skillIcons {
-    color: #487FAD; 
+    color: #7a70b9; 
     font-size: clamp(1.3rem, 2.3vw, 3.3rem); 
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
     text-align: center; 
@@ -121,13 +128,13 @@ html, body{
   
   /*skill icons on hover larger and color change*/
   .skillIcons:hover > p{
-    color: rgb(72, 127, 173); 
+    color: rgb(110, 103, 162); 
     
     
   }
 
   .bar{
-    color: #487FAD; 
+    color: #7a70b9; 
   }
   .skillIcons:hover  .bar{
     color: #101119; 
@@ -145,7 +152,7 @@ html, body{
   /*navbar shadow*/
   .navbar {
     /* height: 3.75rem;  */
-    box-shadow: 0 .2em .5em  rgba(72, 127, 173, 0.5); 
+    box-shadow: 0 .2em .5em  rgba(110, 103, 162, 0.5); 
     z-index: 600; 
     min-height: clamp(2.5rem, 3vw, 4rem);
     background-color: #F2F5F7 !important; 
@@ -161,7 +168,7 @@ html, body{
     text-shadow: .02rem .02rem rgba(169, 198, 218, 0.3) !important; 
   }
   .nav-link:hover {
-    color: #487FAD !important; 
+    color: #7a70b9 !important; 
     cursor: pointer;
   }
 
@@ -191,10 +198,10 @@ html, body{
   
   /*contact Icon Colors*/
   .icon {
-     color: #487FAD; 
+     color: #7a70b9; 
   }
   .icon:hover{
-    color: #2f424e; 
+    color: #3f3c5e; 
     cursor: pointer;
   }
   
@@ -221,7 +228,7 @@ html, body{
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-      background: #487FAD; 
+      background: #7a70b9; 
       border-radius: .8em;
   }
   /* Handle on hover */
@@ -230,7 +237,7 @@ html, body{
   }
   
   .links{
-    color: #487FAD;
+    color: #7a70b9;
     letter-spacing: 0.1em;
   }
   .links:hover{
@@ -241,7 +248,7 @@ html, body{
   
 
   #opposite, #opposite2{
-    background: #487FAD;
+    background: #7a70b9;
     width: clamp(2.8rem, 3vw, 4rem); 
     height: clamp(2.5rem, 2vw, 2.5rem);
     
@@ -269,7 +276,7 @@ html, body{
 }
 
 .navbar-toggler:focus{
-  color: #487FAD; 
+  color: #7a70b9; 
 }
 
 
@@ -300,7 +307,7 @@ html, body{
   width: 100%;
   
   opacity: 1;
-  left: -1.2rem;
+  left: -.95rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -315,7 +322,7 @@ html, body{
 
   
   .animated-icon2 span {
-  background: #487FAD;
+  background: #7a70b9;
   height: clamp(.1rem, .2vw, .3rem); 
   width: clamp(2rem, 2.3vw, 2.5rem); 
   
