@@ -13,6 +13,8 @@ let count = 0;
 console.log("Well, hello there. If you're looking for some info," +
 " check out my readme:  " ); 
 console.log('https://github.com/mzmormonde/mzmo.dev/blob/main/README.md#-welcome-'); 
+console.log("Or, check out my resume here: "); 
+console.log('https://docs.google.com/document/d/1Z9cJ0gpnJsqVhCGAhxxTQAAqLL3RO7UIr34wirixSqI/edit?usp=sharing'); 
 
 
 // button on dark mode page to get to light mode 
