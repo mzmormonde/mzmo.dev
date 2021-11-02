@@ -10,6 +10,8 @@ var link = document.createElement('link');
 
 let count = 0;
 
+console.log("Well, hello there. If you're looking for some info," +
+" check out my readme")
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
     //console.log(e.target);

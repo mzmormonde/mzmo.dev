@@ -101,6 +101,12 @@ a#gameLink {
   color: #D7AC83;
 }
 
+figcaption.name {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: bold; 
+  text-shadow: .05vw .05vw rgba(0, 0, 0, 0.3);
+}
+
 figcaption.text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   text-shadow: .05vw .05vw rgba(0, 0, 0, 0.3);
