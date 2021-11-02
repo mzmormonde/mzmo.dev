@@ -29,11 +29,11 @@ p {
 }
 
 .paragraph{
-  -webkit-transition: color 1.5s;
-    -moz-transition:    color 1.5s;
-    -ms-transition:     color 1.5s;
-    -o-transition:      color 1.5s;
-    transition:         color 1.5s;
+  -webkit-transition: color 1.5s ease-out;
+  -moz-transition:    color 1.5s ease-out;
+  -ms-transition:     color 1.5s ease-out;
+  -o-transition:      color 1.5s ease-out;
+  transition:         color 1.5s ease-out;
 }
 /*Change paragraph color on hover*/
 .paragraph:hover{
@@ -134,12 +134,12 @@ h2 {
   
 }
 
-.skillIcons:hover > p {
-  -webkit-transition: color 1.5s;
-  -moz-transition:    color 1.5s;
-  -ms-transition:     color 1.5s;
-  -o-transition:      color 1.5s;
-  transition:         color 1.5s;
+.skillIcons > p {
+  -webkit-transition: color 1.5s ease-out;
+  -moz-transition:    color 1.5s ease-out;
+  -ms-transition:     color 1.5s ease-out;
+  -o-transition:      color 1.5s ease-out;
+  transition:         color 1.5s ease-out;
 }
 /*skill icons on hover larger and color change*/
 .skillIcons:hover > p{
@@ -148,11 +148,11 @@ h2 {
 
 .bar{
   color: #7a70b9; 
-  -webkit-transition: color 1.5s;
-  -moz-transition:    color 1.5s;
-  -ms-transition:     color 1.5s;
-  -o-transition:      color 1.5s;
-  transition:         color 1.5s;
+  -webkit-transition: color 1.5s ease-out;
+  -moz-transition:    color 1.5s ease-out;
+  -ms-transition:     color 1.5s ease-out;
+  -o-transition:      color 1.5s ease-out;
+  transition:         color 1.5s ease-out;
 }
 .skillIcons:hover  .bar{
   color: #f3f5f7; 
