@@ -209,14 +209,14 @@ html, body{
   
   /*Contact Icons*/
   .contactIcons {
-    font-size: clamp(1rem, 2vw, 3rem); 
+    font-size: clamp(1.3rem, 2.3vw, 3.3rem); 
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
     text-align: center; 
     margin: auto; 
    
   }
   .contactIcons:hover {
-    font-size: clamp(1.2rem, 2vw, 3rem); 
+    font-size: clamp(1.3rem, 2.3vw, 3.3rem); 
     cursor: pointer;
   }
   

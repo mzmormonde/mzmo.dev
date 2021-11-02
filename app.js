@@ -11,7 +11,8 @@ var link = document.createElement('link');
 let count = 0;
 
 console.log("Well, hello there. If you're looking for some info," +
-" check out my readme: "); 
+" check out my readme:  " ); 
+console.log('https://github.com/mzmormonde/mzmo.dev/blob/main/README.md#-welcome-'); 
 
 
 // button on dark mode page to get to light mode 
