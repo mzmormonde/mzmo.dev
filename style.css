@@ -28,7 +28,13 @@ p {
   margin-left: 1.5em;   
 }
 
-
+.paragraph{
+  -webkit-transition: color 1.5s;
+    -moz-transition:    color 1.5s;
+    -ms-transition:     color 1.5s;
+    -o-transition:      color 1.5s;
+    transition:         color 1.5s;
+}
 /*Change paragraph color on hover*/
 .paragraph:hover{
   color: #7a70b9; 
@@ -36,11 +42,6 @@ p {
   text-shadow: .05rem .05rem rgba(9, 38, 59, 0.3);
 }
 
-/*Change paragraph color on hover*/
-.paragraph:hover{
-  color: rgba(110, 103, 162, .8); 
-  text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
-}
 
 /*hr design. could use improvement*/
 hr {
@@ -125,14 +126,21 @@ h2 {
 
 /*Skill Icons*/
 .skillIcons {
-  
+ 
   font-size: clamp(1.3rem, 2.3vw, 3.3rem); 
   text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3); 
   text-align: center; 
   margin: auto; 
+  
 }
 
-
+.skillIcons:hover > p {
+  -webkit-transition: color 1.5s;
+  -moz-transition:    color 1.5s;
+  -ms-transition:     color 1.5s;
+  -o-transition:      color 1.5s;
+  transition:         color 1.5s;
+}
 /*skill icons on hover larger and color change*/
 .skillIcons:hover > p{
   color: rgb(110, 103, 162); 
@@ -140,6 +148,11 @@ h2 {
 
 .bar{
   color: #7a70b9; 
+  -webkit-transition: color 1.5s;
+  -moz-transition:    color 1.5s;
+  -ms-transition:     color 1.5s;
+  -o-transition:      color 1.5s;
+  transition:         color 1.5s;
 }
 .skillIcons:hover  .bar{
   color: #f3f5f7; 
