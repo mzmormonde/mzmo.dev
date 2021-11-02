@@ -1,44 +1,28 @@
 
-/***  appendNewCard(parentElement)  
-
-
-INPUT/OUTPUT: 
-The appendNewCard function takes in a parent HTML element as a parameter named 'parentElement'. The parent element will look like this:
-
-  <div id="card-container">
-  </div>
-
-After the function call the parentElement should look like this:
-
-  <div id="card-container">
-    <div class="card">
-      <div class="card-down"></div>
-      <div class="card-up"></div>
-    </div>
-  </div>
-
-To accomplish this, the function is should create the new card element (i.e. .card), append it as a child to the parentElement (i.e. #card-container), and return the new card element.
+/***  Project created during summer html/css/javascript course
+     created using baseline code from professor
 */
 function appendNewCard(parentElement) {
-  // Step 1: Make a variable for the card element. Assign it to a new div element.
+  // Make a variable for the card element. Assign it to a new div element.
 
   //console.log("in appendNewCard"); 
   const card = document.createElement("div");
 
-  // Step 2: Add the "card" class to the card element.
+  // Add the "card" class to the card element.
 
   card.classList.add("card");
 
-  // Step 3: Write the HTML for the children of the card element (card-down and card-up) as a normal string and assign it as the innerHTML of the card element.
+  // Write the HTML for the children of the card element (card-down and card-up) as a normal 
+  //string and assign it as the innerHTML of the card element.
   card.innerHTML = '<div class="card-down"></div><div class="card-up"></div>';
 
 
-  // Step 4: Append the card element to the parentElement, making the card element a "child".
+  // Append the card element to the parentElement, making the card element a "child".
 
   // let position = document.getElementById('card-container')[0]; 
   // position.appendChild(card); 
   parentElement.appendChild(card);
-  // Step 5: Return the card element.
+  // Return the card element.
   return card;
 }
 //TEST - RECOMMENT WHEN FINISHED
@@ -47,16 +31,17 @@ function appendNewCard(parentElement) {
 /***  shuffleCardImageClasses()
  
 OVERVIEW:
-We've defined image classes in the CSS named 'image-1' through 'image-6' that, when applied to a card, will make it show that particular image when it's flipped. Since the matching game works with pairs of images, we want to generate a random array with two of each image class string (12 total).
+defined image classes in the CSS named 'image-1' through 'image-6' that, when applied to a card, 
+will make it show that particular image when it's flipped.
  
 INPUT/OUTPUT: 
-Returns an array with 12 randomly ordered image classes (i.e. image-X, where X is a value between 1 and 6). There should be exactly 2 of each image class in the array.
+Returns an array with 12 randomly ordered image classes 
 */
 function shuffleCardImageClasses() {
   //console.log("in shuffleCardImageClasses"); 
-  // Step 1: Initialize an array of 2 of each image class strings in-order (e.g. "image-1", "image-1", "image-2"...)
+  //Initialize an array of 2 of each image class strings in-order (e.g. "image-1", "image-1", "image-2"...)
   let array = ["image-1", "image-1", "image-2", "image-2", "image-3", "image-3", "image-4", "image-4", "image-5", "image-5", "image-6", "image-6"]
-  /* Step 2: We're going to use a library to randomly "shuffle" the array we created. The library is called "underscore.js" because it uses an "_" charector as an object to contain helper methods.  Load underscore.js in your HTML via the CDN and then look at the "shuffle" method.  Note to ignore the "require" syntax as this is for non-browser environments (i.e. the var "_" will already be available to you from loading the CDN).
+  /*  We're going to use a library to randomly "shuffle" the array we created. The library is called "underscore.js" because it uses an "_" charector as an object to contain helper methods.  Load underscore.js in your HTML via the CDN and then look at the "shuffle" method.  Note to ignore the "require" syntax as this is for non-browser environments (i.e. the var "_" will already be available to you from loading the CDN).
    
   CDN: https://cdnjs.com/libraries/underscore.js/1.4.1
    
@@ -64,7 +49,7 @@ function shuffleCardImageClasses() {
    */
   result = _.shuffle(array)
 
-  // Step 3: Return the shuffled array of class names.
+  //Return the shuffled array of class names.
   return result;
 }
 //shuffleCardImageClassesTest();
@@ -73,7 +58,8 @@ function shuffleCardImageClasses() {
 /***  createCards()
  
 OVERVIEW:
-For each of the 12 cards in the game, this function will create a card, assign it a random image class, and create an object to represent that card in our program.
+For each of the 12 cards in the game, this function will create a card, 
+assign it a random image class, and create an object to represent that card in our program.
  
 INPUT/OUTPUT:  
 The 'parentElement' parameter is the DOM element where the cards should be appended as children (i.e. #card-container). 
@@ -84,20 +70,20 @@ Returns an array of card objects to track all the cards for the rest of our prog
 */
 function createCards(parentElement, shuffledImageClasses) {
   //console.log("in createCards"); 
-  // Step 1: Make an empty array to hold our card objects.
+  // Make an empty array to hold our card objects.
   let array = [];
   let cardObject = {};
 
-  // Step 2: Loop 12 times to create the 12 cards we need.
+  //Loop 12 times to create the 12 cards we need.
   for (let i = 0; i < 12; i++) {
 
 
-    // Step 2(a): Use appendNewCard to create/append a new card and store the result in a variable.
+    // Use appendNewCard to create/append a new card and store the result in a variable.
     let newCard = appendNewCard(parentElement);
     newCard.classList.add(shuffledImageClasses[i])
-    // Step 2(b): Add an image class to the new card element, using shuffledImageClasses[i].
+    // Add an image class to the new card element, using shuffledImageClasses[i].
 
-    /* Step 2(c): Create a new object representing this card. This should have properties for:
+    /* Create a new object representing this card. This should have properties for:
        "index" -- what iteration of the loop is this.
        "element" -- the dom element for the card
        "imageClass" -- the string of the image class on the card.
@@ -107,12 +93,12 @@ function createCards(parentElement, shuffledImageClasses) {
       element: newCard,
       imageClass: shuffledImageClasses[i]
     }
-    // Step 2(d): Append the new card object to the array of card objects.
+    //Append the new card object to the array of card objects.
     array.push(cardObject);
     //newCard.classList.add(image) ;
   }
 
-  // Step 3: Return the array of 12 card objects.
+  // Return the array of 12 card objects.
   return array;
 }
 //createCardsTest();
@@ -159,17 +145,17 @@ This function should use the global 'counters' object above to store counter nam
 */
 function incrementCounter(counterName, parentElement) {
   //console.log("in incrementCounter"); 
-  // Step 1: If the 'counterName' property is not defined in the 'counters' object, add it with a value of 0.
+  // If the 'counterName' property is not defined in the 'counters' object, add it with a value of 0.
 
   if (counters[counterName] === undefined) {
     counters[counterName] = 0;
 
   }
-  // Step 2: Increment the counter for 'counterName'.
+  // Increment the counter for 'counterName'.
 
   counters[counterName]++;
 
-  // Step 3: Change the DOM within 'parentElement' to display the new counter value.
+  //  Change the DOM within 'parentElement' to display the new counter value.
   parentElement.innerHTML = counters[counterName];
 
 }
@@ -234,11 +220,11 @@ let matchCounter = 0;
 
 function onCardFlipped(newlyFlippedCard) {
   //console.log("in newlyFlippedCard"); 
-  // Step 1: Add one to the flip counter UI.
+  //  Add one to the flip counter UI.
   flipCounter++;
   document.getElementById("flip-count").innerHTML = flipCounter;
 
-  // Step 2: If this is the first card flipped, then remember that card using the 'lastCardFlipped' variable and return (nothing else to do).
+  //  If this is the first card flipped, then remember that card using the 'lastCardFlipped' variable and return (nothing else to do).
   if (flipCounter % 2 != 0) {
     lastCardFlipped = newlyFlippedCard;
 
@@ -247,7 +233,7 @@ function onCardFlipped(newlyFlippedCard) {
     // console.log("lastCardFlipped: " + lastCardFlipped); 
     // console.log("newlyFlippedCard: " + newlyFlippedCard)
 
-    // Step 3: If the cards don't match, then remove the "flipped" class from each, reset 'lastCardFlipped', and return.
+    // If the cards don't match, then remove the "flipped" class from each, reset 'lastCardFlipped', and return.
     if (doCardsMatch(lastCardFlipped, newlyFlippedCard) != true) {
       if (newlyFlippedCard.element.classList.contains("flipped")) {
         newlyFlippedCard.element.classList.remove("flipped");
@@ -262,13 +248,13 @@ function onCardFlipped(newlyFlippedCard) {
       // else if (lastCardFlipped === newlyFlippedCard) {
       // Otherwise, we have two matching cards.
 
-      // Step 4: Increment the match counter and optionally add a "glow" effect to the matching cards.
+      // Increment the match counter and optionally add a "glow" effect to the matching cards.
       matchCounter++;
       document.getElementById("match-count").innerHTML = matchCounter;
 
       // document.getElementById("div").style.borderStyle = "solid";
       // document.getElementById("div").style.borderColor = "pink";
-      // Step 5: Play either the win audio or match audio based on whether the user has the number of matches needed to win.
+      //  Play either the win audio or match audio based on whether the user has the number of matches needed to win.
       if (matchCounter == 6) {
         winAudio.play();
         //document.getElementById('winAudio').play();
@@ -281,7 +267,7 @@ function onCardFlipped(newlyFlippedCard) {
 
 
 
-    // Step 6: Reset 'lastCardFlipped'.
+    // Reset 'lastCardFlipped'.
     lastCardFlipped = null;
   }
 

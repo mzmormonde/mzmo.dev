@@ -36,8 +36,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<!-- Navbar -->
 
+<!-- Navbar -->
 
 <body data-bs-target='#navbar' data-bs-offset='100' class='body'>
 
@@ -46,39 +46,34 @@
       <a class="navbar-brand " href="#">
         <img src='Icons/mont.png' class='navbar-img' alt="MO personal website logo">
       </a>
-      <div>
 
-      </div>
-
+      <!-- hamburger button on navbar  -->
       <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
         aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="animated-icon2"><span></span><span></span><span></span><span></span></span>
       </button>
 
+      <!-- navbar links -->
       <div class="collapse navbar-collapse" id="navbars">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
             <button class='btn button backgroundButton' id='opposite'></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#home" >Home</a>
+            <a class="nav-link " href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#about">Meet Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" >Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-         
           <li class="nav-item">
             <a class="nav-link " href="#contact">Contact</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link " href="#imgCredit">Image Credit</a>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -86,7 +81,7 @@
 
 
 
-  <!-- empty block -->
+  <!-- empty block for spacer-->
   <div class='spacer'></div>
 
 
@@ -94,72 +89,57 @@
 
   <section class="heroImage " id='home'>
     <div class="caption">
-
       <img id="profileImg" src='Images/one.jpg' alt='me' class="profileImg">
-
       <h1 id='myName'>Megan Ormonde</h1>
       <p id='tagline'>If at first you don’t succeed, call it version 1.0</p>
     </div>
-
-   
   </section>
 
 
   <hr>
 
   <!-- Meet Me -->
-  <h2><!--<i class="bi-card-image"></i> --> Meet Me</h2>
+  <h2>
+    Meet Me
+  </h2>
   <section class="container col-12" id='about'>
-    
-      <div class="row">
-        <section class='container col-12'>
-
-        </section>
-        <div class="container col-12 col-md-6 col-sm-4 my-auto">
-          <p class='paragraph'>Currently studying Software Engineering at Arizona State University with an expected
-            graduation date of May 2022. I am passionate about programming and am currently aiming to work in web and/or
-            game development. I am a lover of learning and while currently considering which programming language to
-            move
-            onto next, long term I plan to continue learning as much as I can, not just within Software Engineering, but
-            about anything and everything in life.
-          </p>
-
-        </div>
-
-        <div class=" container col-12 col-md-6 col-sm-4 my-auto">
-          <p>
-            <img class="secondaryImg" src="Images/purple.webp" alt="Me wearing sunglasses with purple hair"> 
-          </p>
-        </div>
+    <div class="row">
+      <section class='container col-12'>
+      </section>
+      <div class="container col-12 col-md-6 col-sm-4 my-auto">
+        <!-- Change this for something that isnt me talking about myself? -->
+        <p class='paragraph'>
+          Welcome to my site! I am currently studying Software Engineering at Arizona State University with an expected
+          graduation date of May 2022. This page is an always changing project of mine and I hope to
+          keep adding new finished projects and changing things up as I learn more :). 
+          I am passionate about programming and looking forward to continuing to
+          expand my knowledge. 
+        </p>
       </div>
+      <div class=" container col-12 col-md-6 col-sm-4 my-auto">
+        <p>
+          <img class="secondaryImg" src="Images/purple.webp" alt="Me wearing sunglasses with purple hair">
+        </p>
+      </div>
+    </div>
   </section>
 
 
   <hr>
 
   <!-- Skills -->
-  <!-- PUT IN ?? YEARS EXPERIENCE? INFO ON THE SKILL? Self note: ayo check more sites for more icons to finish putting in the more minor skills. -->
-
   <h2>Skills</h2>
   <section class="container" id='skills'>
-   
     <div class="row">
       <p>
       <div class="col-lg-12 col-md-6 col-sm-4 skillIcons">
-        <!-- <p>
-            Hard Skills <br>
-            •Java (Experienced) •NPM (Familiar) •Javascript (Knowledgable) 
-            •C++ (Knowledgable) •C (Familiar) •HTML5 (Knowledgable) •CSS3 (Knowledgable)
-            •JQuery (Familiar) •Git (Experienced) •Gradle (Knowledgable) •Github (Experienced)
-            •Bootstrap (Familiar) •MySQL (Knowledgable) •Node.js (Familiar)
-          </p> -->
         <p>
           Hard Skills <br>
-          <span class="bar">┃</span> Java <span class="bar">┃</span> NPM <span class="bar">┃</span> Javascript
-          <span class="bar">┃</span> C++ <span class="bar">┃</span> C <span class="bar">┃</span> HTML5 <span
-            class="bar">┃</span> CSS3
+          <span class="bar">┃</span> Java <span class="bar">┃</span> Javascript
+          <span class="bar">┃</span> C++ <span class="bar">┃</span> C <span class="bar">┃</span> HTML5 <span class="bar">┃</span> CSS3
           <span class="bar">┃</span> Git <span class="bar">┃</span> Gradle <span class="bar">┃</span> Github
           <span class="bar">┃</span> Bootstrap <span class="bar">┃</span> MySQL <span class="bar">┃</span> Node.js
+          <span class="bar">┃</span> Dart <span class="bar">┃</span> Flutter
         </p>
 
       </div>
@@ -172,123 +152,112 @@
             class="bar">┃</span> Communication
         </p>
       </div>
-      
-
     </div>
   </section>
 
 
   <hr>
 
+  <!-- Projects -->
   <h2>Projects</h2>
-  <section class="container" id='projects' >
-    
+  <section class="container" id='projects'>
     <div>
       <div class="row">
-
         <div class="container col-lg-3 col-md-6 col-sm-12 col-xs-12 projectImage">
           <a id="matchGameLink" data-toggle="hover" title="Click to play">
             <figure>
               <img src="Images/matchGame.webp" alt="Screenshot of match game">
-            <figcaption>Match Game</figcaption> 
+              <figcaption>Match Game</figcaption>
             </figure>
-                         
           </a>
-            
-          </div>
-          <div class=" container col-lg-3 col-md-6 col-sm-12 col-xs-12 projectImage">
-            <a id="higherLowerLink" data-toggle="hover" title="Click to play">
-              <figure>
-                <img src="Images/HigherLower.webp" alt="Screenshot of higher lower game">
+        </div>
+        <div class=" container col-lg-3 col-md-6 col-sm-12 col-xs-12 projectImage">
+          <a id="higherLowerLink" data-toggle="hover" title="Click to play">
+            <figure>
+              <img src="Images/HigherLower.webp" alt="Screenshot of higher lower game">
               <figcaption>Higher/Lower</figcaption>
-              </figure>
-                            
-            </a>
-          </div>
-          <div class=" container col-lg-3 col-md-6 col-sm-12 col-xs-12 projectImage">
-              <a id="aug2021Hackathon" data-toggle="hover" title="Click to view">
-                <figure>
-                  <img src="Images/Picture5.webp" alt="Screenshot of hackathon page">
-                <figcaption>August '21 Hackathon</figcaption>
-                </figure>
-                
-            </a>
-          </div>
-    
-      
+            </figure>
+          </a>
+        </div>
+        <div class=" container col-lg-3 col-md-6 col-sm-12 col-xs-12 projectImage">
+          <a id="aug2021Hackathon" data-toggle="hover" title="Click to view">
+            <figure>
+              <img src="Images/Picture5.webp" alt="Screenshot of hackathon page">
+              <figcaption>August '21 Hackathon</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
   <br>
-
   <hr>
 
 
-    <!-- Contact me -->
-    <!-- uncomment phone number when no longer sharing site w classmates/before use for resume -->
+  <!-- Contact me -->
 
-    <h2>Contact Me</h2>
-    <section class="container" id='contact'>
-      
-      <div class="row no-gutters d-fex justify-content-center  contactIcons">
+  <h2>Contact Me</h2>
+  <section class="container" id='contact'>
 
-        <div class=' col-lg-2 col-md-6 col-sm-12 contactIcons '>
-          <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i
-              class="icon  bi-linkedin"></i></a>
-        </div>
-        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-          <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a>
-        </div>
-        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-          <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i
-              class="icon bi-envelope-fill "></i></a>
-        </div>
-        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
-          <a data-toggle="hover" title="Megan O#2951" href="https://discordapp.com/users/499706377103736833/"
-            target="_blank">
-            <i class="icon bi-discord "></i></a>
-        </div>
-        <div class='col-lg-2 col-md-6 col-sm-12 contactIcons'>
-          <a data-toggle="hover" title="Resume"
-            href="https://docs.google.com/document/d/1Z9cJ0gpnJsqVhCGAhxxTQAAqLL3RO7UIr34wirixSqI/edit?usp=sharing"
-            target="_blank">
-            <i class="icon bi-file-earmark-person"></i>
-          </a>
-        </div>
-        <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
+    <div class="row no-gutters d-fex justify-content-center  contactIcons">
+
+      <div class=' col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i
+            class="icon  bi-linkedin"></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i
+            class="icon bi-envelope-fill "></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '>
+        <a data-toggle="hover" title="Megan O#2951" href="https://discordapp.com/users/499706377103736833/"
+          target="_blank">
+          <i class="icon bi-discord "></i></a>
+      </div>
+      <div class='col-lg-2 col-md-6 col-sm-12 contactIcons'>
+        <a data-toggle="hover" title="Resume"
+          href="https://docs.google.com/document/d/1Z9cJ0gpnJsqVhCGAhxxTQAAqLL3RO7UIr34wirixSqI/edit?usp=sharing"
+          target="_blank">
+          <i class="icon bi-file-earmark-person"></i>
+        </a>
+      </div>
+      <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
            <a data-toggle="popover" data-trigger="focus" title="U01T410GMDK" data-content="U01T410GMDK"><i class="icon bi-slack"></i></a></div> -->
 
 
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Megan O#2951
+  <!-- discord: Megan O#2951
        U01T410GMDK-->
 
-    <br>
-    <hr>
+  <br>
+  <hr>
 
 
-    <!-- <button class='btn button backgroundButton' id='opposite'>Click for reverse colors</button>-->
-    <!-- <hr> -->
-    <!-- Footer -->
-    <footer class="container footer">
-      <div class="row">
-        <div class="container col-12 ">
-          &copy; Megan Z. M. Ormonde 2021
-        </div>
+  <!-- <hr> -->
+  <!-- Footer -->
+  <footer class="container footer">
+    <div class="row">
+      <div class="container col-12 ">
+        &copy; Megan Z. M. Ormonde 2021
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-      crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom js-->
-    <script src='app.js'></script>
+  <!-- Custom js-->
+  <script src='app.js'></script>
 </body>
 
 </html>
