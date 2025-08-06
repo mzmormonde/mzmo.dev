@@ -1,3 +1,4 @@
+/* Base Styles */
 html,
 body {
     color: #F2F5F7;
@@ -8,6 +9,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: 0.1em;
     scrollbar-color: #c6c1ec #101119;
+    line-height: 1.6;
 }
 
 p {
@@ -16,17 +18,42 @@ p {
     font-size: clamp(1rem, 3vw, 1.5rem);
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
     letter-spacing: 0.1em;
+    margin-bottom: 1rem;
 }
 
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
 
-/*Image in navbar*/
-
+/* Navigation */
 .navbar-img {
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 1.5em;
 }
 
+.navbar {
+    box-shadow: 0 .2em .5em rgba(110, 103, 162, 0.5);
+    z-index: 600;
+    min-height: clamp(2.5rem, 3vw, 4rem);
+    background-color: rgb(16, 17, 25) !important;
+}
+
+.me-auto {
+    margin-right: 0 !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link:hover {
+    color: #7a70b9 !important;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Interactive Elements */
 .paragraph {
     -webkit-transition: color 1.5s ease-out;
     -moz-transition: color 1.5s ease-out;
@@ -35,24 +62,35 @@ p {
     transition: color 1.5s ease-out;
 }
 
-
-/*Change paragraph color on hover*/
-
 .paragraph:hover {
     color: #7a70b9;
-    /* font-weight: bold; */
     text-shadow: .05rem .05rem rgba(9, 38, 59, 0.3);
 }
 
+#opposite,
+#opposite2 {
+    background: #7a70b9;
+    width: clamp(2.8rem, 3vw, 4rem);
+    height: clamp(2.5rem, 2vw, 2.5rem);
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
 
-/*hr design. could use improvement*/
+#opposite:after,
+#opposite2:after {
+    content: "☀️";
+}
 
+#opposite:hover,
+#opposite2:hover {
+    background: #c6c1ec;
+    cursor: pointer;
+}
+
+/* Layout Elements */
 hr {
-    /* border: .2em solid #7a70b9; 
-  margin: .5em 0;
-  position: relative;
-  background: #7a70b9; 
-  box-shadow: 0 20px 20px -20px #e2e0f5; */
     border: none;
     width: 90%;
     height: 5rem;
@@ -61,24 +99,25 @@ hr {
     margin: 1rem auto 10px;
 }
 
+.spacer {
+    height: .2rem;
+}
 
-/*h2 adjustments*/
-
+/* Typography */
 h2 {
     color: #e2e0f5;
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
 }
 
+/* Hero Section */
 .heroImage {
     height: 55rem;
     background: linear-gradient(-45deg, #2b2a3a, #43415e, #615e8a, #7d76bb, #827eaf, #9790c7);
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
-    /* margin-top: 2em; */
-}
-
-.spacer {
-    height: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes gradient {
@@ -93,48 +132,41 @@ h2 {
     }
 }
 
+.caption {
+    z-index: 75;
+    top: 15rem;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-shadow: .1rem .1rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FBFBF3;
+}
 
-/*Profile image settings*/
-
+/* Images */
 #profileImg {
     height: clamp(15rem, 15vw, 16rem);
     width: clamp(15rem, 15vw, 16rem);
     border-radius: 50%;
     border: .8rem double rgba(110, 103, 162, 0.65);
+    margin-bottom: 1rem;
 }
-
-
-/*about me image*/
 
 .secondaryImg {
     height: clamp(22rem, 23vw, 25rem);
     width: clamp(18rem, 19vw, 19rem);
     border-radius: .5rem;
+    max-width: 100%;
+    height: auto;
 }
 
-
-/*hero  caption */
-
-.caption {
-    z-index: 75;
-    top: 15rem;
-    font-size: clamp(1rem, 1vw, 1.5rem);
-    /* font-weight: bolder;  */
-    text-shadow: .1rem .1rem rgba(0, 0, 0, 0.3);
-    display: inline;
-    flex-direction: column;
-    position: relative;
-    color: #FBFBF3;
-}
-
-
-/*Skill Icons*/
-
+/* Skills Section */
 .skillIcons {
     font-size: clamp(1.3rem, 2.3vw, 3.3rem);
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
     text-align: center;
     margin: auto;
+    padding: 1rem 0;
 }
 
 .skillIcons>p {
@@ -144,9 +176,6 @@ h2 {
     -o-transition: color 1.5s ease-out;
     transition: color 1.5s ease-out;
 }
-
-
-/*skill icons on hover larger and color change*/
 
 .skillIcons:hover>p {
     color: rgb(110, 103, 162);
@@ -165,84 +194,59 @@ h2 {
     color: #f3f5f7;
 }
 
-
-/*Set navbar links to right side*/
-
-.me-auto {
-    margin-right: 0 !important;
+/* Projects Section */
+.projectImage {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
+.projectImage:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
-
-/*navbar shadow*/
-
-.navbar {
-    /* height: 3.75rem;  */
-    box-shadow: 0 .2em .5em rgba(110, 103, 162, 0.5);
-    z-index: 600;
-    min-height: clamp(2.5rem, 3vw, 4rem);
-    background-color: rgb(16, 17, 25) !important;
+.projectImage img {
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    max-width: 100%;
+    height: auto;
 }
 
+.projectImage figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
 
-/*Contact Icons*/
-
+/* Contact Section */
 .contactIcons {
     font-size: clamp(1.3rem, 2.3vw, 3.3rem);
     text-shadow: .05rem .05rem rgba(206, 216, 223, 0.3);
     text-align: center;
     margin: auto;
+    padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .contactIcons:hover {
-    font-size: clamp(1.3rem, 2.3vw, 3.3rem);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
-
-/*contact Icon Colors*/
-
 .icon {
     color: #7a70b9;
+    transition: color 0.3s ease;
 }
 
 .icon:hover {
     color: #c6c1ec;
 }
 
-
-/*MESSY TO MESS W*/
-
-
-/*change navbar colors*/
-
-.navbar-customclass {
-    /* background-color: #396884; */
-    color: #F2F5F7 !important;
-    /* font-weight: bold !important;  */
-    text-shadow: .02rem .02rem rgba(169, 198, 218, 0.3) !important;
-}
-
-.nav-link:hover {
-    color: #7a70b9 !important;
-    cursor: pointer;
-}
-
-
-/* .navbar-nav > .active > a {
-  color: aqua;  
-} */
-
-.bg-primary {
-    background-color: hsl(233, 22%, 8%) !important;
-}
-
-
-/*footer*/
-
+/* Footer */
 .footer {
     display: flex;
     align-items: center;
@@ -251,67 +255,25 @@ h2 {
     padding-bottom: 1.2em;
 }
 
-
-/*change the color and thickness of the scrollbar to match my background 
-  add a hover component to darken the bar when hovering to make it more noticable
-  round the edges*/
-
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: clamp(.5em, .65vw, .8em);
 }
 
-
-/* Track */
-
 ::-webkit-scrollbar-track {
     background: #101119;
 }
-
-
-/* Handle */
 
 ::-webkit-scrollbar-thumb {
     background: #c6c1ec;
     border-radius: .8em;
 }
 
-
-/* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: #7a70b9;
 }
 
-.links {
-    color: #c6c1ec;
-    letter-spacing: 0.1em;
-}
-
-.links:hover {
-    color: #7a70b9;
-    cursor: pointer;
-}
-
-#opposite,
-#opposite2 {
-    background: #7a70b9;
-    width: clamp(2.8rem, 3vw, 4rem);
-    height: clamp(2.5rem, 2vw, 2.5rem);
-    align-items: center;
-}
-
-#opposite:after,
-#opposite2:after {
-    content: "☀️";
-    /* margin: auto; */
-}
-
-#opposite:hover,
-#opposite2:hover {
-    background: #c6c1ec;
-    cursor: pointer;
-}
-
+/* Mobile Navigation */
 .navbar-toggler,
 .navbar-toggler:focus {
     height: clamp(1.6rem, 2.6vw, 3.6rem);
@@ -412,31 +374,12 @@ h2 {
     left: 50%;
 }
 
-div.container.projectImage {
-    height: 15rem;
-    width: 15rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-div.container.projectImage:hover {
-    height: 15rem;
-    width: 15rem;
-    cursor: pointer;
-}
-
-div.container.projectImage img {
-    height: 15rem;
-    width: 15rem;
-    overflow: hidden;
-    border-radius: .5rem;
-}
-
+/* Additional Elements */
 .note {
     font-size: clamp(.5rem, 5vw, 1rem);
 }
 
-div.container.hackathonImage {
+.hackathonImage {
     height: clamp(20rem, 30vw, 40rem);
     width: clamp(40rem, 50vw, 60rem);
     margin-top: 2rem;
@@ -448,4 +391,51 @@ div.container.hackathonImage {
     width: clamp(20rem, 25vw, 30rem);
     overflow: hidden;
     border-radius: .5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heroImage {
+        height: 40rem;
+    }
+    
+    .caption {
+        font-size: clamp(1rem, 1.5vw, 2vw);
+    }
+    
+    #profileImg {
+        height: clamp(12rem, 14rem, 16rem);
+        width: clamp(12rem, 14rem, 16rem);
+    }
+    
+    .secondaryImg {
+        height: clamp(15rem, 18rem, 20rem);
+        width: clamp(13rem, 15rem, 17rem);
+    }
+    
+    .projectImage {
+        height: 12rem;
+        width: 12rem;
+    }
+    
+    .projectImage img {
+        height: 12rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .heroImage {
+        height: 35rem;
+    }
+    
+    .navbar-img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1em;
+    }
+    
+    .skillIcons {
+        font-size: clamp(1.5vw, 2.5vw, 3.5vw);
+    }
 }

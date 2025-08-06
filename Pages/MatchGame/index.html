@@ -1,7 +1,7 @@
 <!-- Project created during summer html/css/javascript course
      created using baseline code from professor -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,42 +12,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <!-- Link for boostrap from: 
-    https://getbootstrap.com/docs/5.0/getting-started/introduction -->
-
 </head>
 
 <body>
-
     <header>
         <h1>Matching Game</h1>
     </header>
-    <section id="game-container">
-
+    
+    <main id="game-container">
         <div id="ui-container">
             <h3>Flips: <span id="flip-count">0</span></h3>
             <h3>Matches: <span id="match-count">0</span></h3>
         </div>
 
-        <div id="card-container">
+        <div id="card-container" role="grid" aria-label="Memory game cards">
         </div>
-
-    </section>
+    </main>
 
     <!-- hold buttons -->
     <section>
         <div id="wrapper">
-            <button class="btn button" id="homeSite">Back to Site</button>
-            <button class="btn button" id="replay">Replay</button>
+            <button class="btn button" id="homeSite" aria-label="Return to main site">Back to Site</button>
+            <button class="btn button" id="replay" aria-label="Play again">Replay</button>
         </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore.js"
         integrity="sha512-qbJl2/KyecDVJdgAwr0Gzhm5KBmkzdUouG+sKmCWP1Idb144ZnfSmCRReuYXPEHIa4j38TwrR2ySeGoFH5gKzA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="tests.js"></script> -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

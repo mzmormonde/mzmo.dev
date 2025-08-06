@@ -5,17 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Megan Ormonde - Software Engineering Portfolio">
+    <meta name="keywords" content="software engineering, web development, game development, portfolio">
+    <meta name="author" content="Megan Ormonde">
 
     <!-- Remember to replace this with your title! -->
-    <title>Megan Ormonde</title>
+    <title>Megan Ormonde - Software Engineer</title>
 
     <link rel="icon" href="Icons/mont.png">
 
     <!-- Link for boostrap from: 
-    https://getbootstrap.com/docs/5.0/getting-started/introduction -->
+      https://getbootstrap.com/docs/5.0/getting-started/introduction -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -35,33 +36,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-
 <!-- Navbar -->
 
 <body data-bs-target='#navbar' data-bs-offset='100' class='body'>
 
-    <nav class="navbar  navbar-dark bg-dark sticky-top" id='navbar'>
+    <nav class="navbar navbar-dark bg-dark sticky-top" id='navbar'>
         <div class="container-fluid">
-            <a class="navbar-brand " href="#">
+            <a class="navbar-brand" href="#" aria-label="Home">
                 <img src='Icons/mont.png' class='navbar-img' alt="MO personal website logo">
             </a>
 
             <!-- hamburger button on navbar  -->
             <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="animated-icon2"><span></span><span></span><span></span><span></span></span>
-      </button>
+                <span class="animated-icon2"><span></span><span></span><span></span><span></span></span>
+            </button>
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbars">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <button class='btn button backgroundButton' id='opposite'></button>
+                        <button class='btn button backgroundButton' id='opposite' aria-label="Toggle dark/light mode">☀️</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#home">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#about">Meet Me</a>
+                        <a class="nav-link" href="#about">Meet Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
@@ -70,29 +70,25 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
     <!-- empty block for spacer-->
     <div class='spacer'></div>
 
-
     <!-- Hero Image -->
 
-    <section class="heroImage " id='home'>
+    <section class="heroImage" id='home'>
         <div class="caption">
-            <img id="profileImg" src='Images/one.jpg' alt='me' class="profileImg">
+            <img id="profileImg" src='Images/one.jpg' alt='Megan Ormonde profile photo' class="profileImg">
             <h1 id='myName'>Megan Ormonde</h1>
-            <p id='tagline'>If at first you don’t succeed, call it version 1.0</p>
+            <p id='tagline'>If at first you don't succeed, call it version 1.0</p>
         </div>
     </section>
-
 
     <hr>
 
@@ -119,34 +115,30 @@
         </div>
     </section>
 
-
     <hr>
 
     <!-- Skills -->
     <h2>Skills</h2>
     <section class="container" id='skills'>
         <div class="row">
-            <p>
-                <div class="col-lg-12 col-md-12 col-sm-4 skillIcons">
-                    <p>
-                        Hard Skills <br> Javascript <span class="bar">┃</span>Typescript
-                        <span class="bar">┃</span> Java <span class="bar">┃</span> C++ <span class="bar">┃</span> HTML5 <span class="bar">┃</span> CSS3
-                        <span class="bar">┃</span> Git <span class="bar">┃</span> Gradle <span class="bar">┃</span> Github
-                        <span class="bar">┃</span> Bootstrap <span class="bar">┃</span> MySQL <span class="bar">┃</span> Node.js
-                        <span class="bar">┃</span> Dart <span class="bar">┃</span> Flutter
-                    </p>
-
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-4 skillIcons">
-                    <p>
-                        Soft Skills <br>
-                        <span class="bar">┃</span> Collaboration <span class="bar">┃</span> Adaptability <span class="bar">┃</span> Teamwork <span class="bar">┃</span> Empathy <span class="bar">┃</span> Creativity
-                        <span class="bar">┃</span> Flexibility <span class="bar">┃</span> Conflict Resolution <span class="bar">┃</span> Communication
-                    </p>
-                </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 skillIcons">
+                <p>
+                    Hard Skills <br> Javascript <span class="bar">┃</span>Typescript
+                    <span class="bar">┃</span> Java <span class="bar">┃</span> C++ <span class="bar">┃</span> HTML5 <span class="bar">┃</span> CSS3
+                    <span class="bar">┃</span> Git <span class="bar">┃</span> Gradle <span class="bar">┃</span> Github
+                    <span class="bar">┃</span> Bootstrap <span class="bar">┃</span> MySQL <span class="bar">┃</span> Node.js
+                    <span class="bar">┃</span> Dart <span class="bar">┃</span> Flutter
+                </p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 skillIcons">
+                <p>
+                    Soft Skills <br>
+                    <span class="bar">┃</span> Collaboration <span class="bar">┃</span> Adaptability <span class="bar">┃</span> Teamwork <span class="bar">┃</span> Empathy <span class="bar">┃</span> Creativity
+                    <span class="bar">┃</span> Flexibility <span class="bar">┃</span> Conflict Resolution <span class="bar">┃</span> Communication
+                </p>
+            </div>
         </div>
     </section>
-
 
     <hr>
 
@@ -156,7 +148,7 @@
         <div>
             <div class="row">
                 <div class="container col-lg-3 col-12 projectImage">
-                    <a id="matchGameLink" data-toggle="hover" title="Click to play">
+                    <a id="matchGameLink" data-toggle="hover" title="Click to play" aria-label="Play Match Game">
                         <figure>
                             <img src="Images/matchGame.webp" alt="Screenshot of match game">
                             <figcaption>Match Game</figcaption>
@@ -164,55 +156,52 @@
                     </a>
                 </div>
                 <div class=" container col-lg-3 col-12 projectImage">
-                    <a id="higherLowerLink" data-toggle="hover" title="Click to play">
+                    <a id="higherLowerLink" data-toggle="hover" title="Click to play" aria-label="Play Higher/Lower Game">
                         <figure>
                             <img src="Images/HigherLower.webp" alt="Screenshot of higher lower game">
                             <figcaption>Higher/Lower</figcaption>
                         </figure>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <br>
     <hr>
-
 
     <!-- Contact me -->
 
     <h2>Contact Me</h2>
     <section class="container" id='contact'>
 
-        <div class="row no-gutters d-fex justify-content-center  contactIcons">
+        <div class="row no-gutters d-fex justify-content-center contactIcons">
 
             <div class='col-2 contactIcons '>
-                <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank"><i
-            class="icon  bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/megan-ormonde-a7623b127/" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="icon bi-linkedin"></i>
+                </a>
             </div>
             <div class='col-2 contactIcons '>
-                <a href="https://github.com/mzmormonde" target="_blank"><i class="icon bi-github"></i></a>
+                <a href="https://github.com/mzmormonde" target="_blank" aria-label="GitHub Profile">
+                    <i class="icon bi-github"></i>
+                </a>
             </div>
             <div class='col-2 contactIcons '>
-                <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu"><i
-            class="icon bi-envelope-fill "></i></a>
+                <a href="mailto:mormonde@asu.edu" data-toggle="hover" title="mormonde@asu.edu" aria-label="Email me">
+                    <i class="icon bi-envelope-fill"></i>
+                </a>
             </div>
             <div class='col-2 contactIcons '>
-                <a data-toggle="hover" title="Megan O#2951" href="https://discordapp.com/users/499706377103736833/" target="_blank">
-                    <i class="icon bi-discord "></i></a>
+                <a data-toggle="hover" title="Megan O#2951" href="https://discordapp.com/users/499706377103736833/" target="_blank" aria-label="Discord Profile">
+                    <i class="icon bi-discord"></i>
+                </a>
             </div>
             <div class=' col-2 contactIcons'>
-                <a data-toggle="hover" title="Resume" href="https://docs.google.com/document/d/1Z9cJ0gpnJsqVhCGAhxxTQAAqLL3RO7UIr34wirixSqI/edit?usp=sharing" target="_blank">
+                <a data-toggle="hover" title="Resume" href="https://docs.google.com/document/d/1Z9cJ0gpnJsqVhCGAhxxTQAAqLL3RO7UIr34wirixSqI/edit?usp=sharing" target="_blank" aria-label="View Resume">
                     <i class="icon bi-file-earmark-person"></i>
                 </a>
             </div>
-            <!-- <div class='col-lg-2 col-md-6 col-sm-12 contactIcons '> 
-           <a data-toggle="popover" data-trigger="focus" title="U01T410GMDK" data-content="U01T410GMDK"><i class="icon bi-slack"></i></a></div> -->
-
-
-
         </div>
     </section>
 
@@ -221,7 +210,6 @@
 
     <br>
     <hr>
-
 
     <!-- <hr> -->
     <!-- Footer -->
